@@ -5,7 +5,7 @@
 
 body {
     min-height: 100vh;
-    background-color: white;
+    // background-color: white;
     background-size: cover;
     margin: 0;
 }
@@ -22,6 +22,10 @@ body {
     box-sizing: border-box;
     font-family: sans-serif;
     text-transform: uppercase;
+}
+
+.active {
+    font-weight: bold;
 }
 
 header {
@@ -102,6 +106,27 @@ header {
     display: none;
 }
 
+.button-nav{
+    position: fixed;
+    top: 70%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    
+    .menu__item {
+        img{
+            width: 90px;height: 90px;
+        }
+        .menu__product {
+            top: 70%;
+        }
+    }
+}
+
 
 .bot-nav {
     background-color: #333;
@@ -147,12 +172,15 @@ header {
 
 
 .bg-slider {
+    background-image: url(../image/bg.jpg), url(../image/bg1.jpg), url(../image/bg2.jpg), url(../image/bg3.jpg),
+    url(../image/bg4.jpg), url(../image/bg5.jpg),url(../image/bg6.jpg), url(../image/bg7.jpg),url(../image/bg8.jpg), 
+    url(../image/bg9.jpg),url(../image/bg10.jpg), url(../image/bg11.jpg),url(../image/bg12.jpg), url(../image/bg13.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
-    animation: slide 50s infinite 0s;
+    animation: slide 80s infinite 0s;
     animation-timing-function: ease-in-out;
     padding: 0;
     .bg-images {
@@ -204,6 +232,24 @@ header {
     }
 }
 
+@media only screen and (min-width: 680px) {
+    .button-nav {
+        position: absolute;
+        top: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        .menu__item {
+            margin: auto;
+            img {
+                height: 8.6em;width: 8.6em;
+            }
+        }
+    }
+
+}
+
 @media only screen and (min-width: 900px) {
     label {
         display: none;
@@ -211,6 +257,12 @@ header {
 
     .nav-logo, .menu-bar-img {
         width: 40px;height: 40px;
+    }
+
+    .button-nav.menu__item {
+        img {
+            height: 14em;width: 12em;
+        }
     }
 
     header .navbar {
@@ -237,6 +289,7 @@ header {
             }
         }
     }
+
 
 }
 
