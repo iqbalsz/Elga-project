@@ -323,7 +323,8 @@ header label {
   -webkit-box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border-width: 0 0 0 10px;
+  border-left: solid #333;
+  border-right: solid #333;
   width: 90%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -336,23 +337,53 @@ header label {
   list-style-type: none;
   padding: 10px;
   margin: 0;
+  width: 100%;
 }
 
 .about-container .about-banner ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.about-container .about-banner ul li img {
-  width: 120px;
-  height: 120px;
+.about-container .about-banner ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.about-container .about-banner ul li img:hover {
-  width: 140px;
-  height: 140px;
+.about-container .about-banner ul li a .bio-logo {
+  width: 60%;
+  height: 60%;
+}
+
+.about-container .about-banner ul li a .bio-logo:hover {
+  width: 70%;
+  height: 70%;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.about-container .about-banner ul li a .elgatama-logo {
+  width: 40%;
+  height: 40%;
+}
+
+.about-container .about-banner ul li a .elgatama-logo:hover {
+  width: 50%;
+  height: 50%;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -361,6 +392,77 @@ header label {
   text-align: center;
   padding: 0 10px 10px 10px;
   margin: 0;
+}
+
+.job-listing-head {
+  margin-top: 80px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.job-listing_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.job-listing_container .sub-job-listing_container {
+  padding: 1em 0 1em 0;
+  margin: 10px 10px 0 10px;
+  -webkit-box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-width: 0 0 0 10px;
+}
+
+.job-listing_container .sub-job-listing_container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0.3em 0 0 0;
+}
+
+.job-listing_container .sub-job-listing_container ul li {
+  margin: 0 0 0 1.5em;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-department {
+  font-size: small;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-desc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: unset;
+  font-size: small;
+  margin: 10px 10px 10px 10px;
+  opacity: 0.8;
+  display: none;
+}
+
+.job-listing_container .sub-job-listing_container:hover .job-listing-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.job-listing_container .sub-job-listing_container .job-listing-info {
+  font-size: smaller;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 680px) {
@@ -408,9 +510,9 @@ header label {
     height: 8.6em;
     width: 8.6em;
   }
-  .about-container .about-banner ul li img {
-    width: 80px;
-    height: 80px;
+  .about-container .about-banner ul li a, .about-container .about-banner ul li img {
+    width: 50%;
+    height: 30%;
   }
 }
 
@@ -443,6 +545,10 @@ header label {
   header .navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .about-container .about-banner ul li a, .about-container .about-banner ul li img {
+    width: 30%;
+    height: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

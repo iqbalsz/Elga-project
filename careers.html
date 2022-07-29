@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elga Tama</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="nav-container">
+        <a href=""><img class="nav-logo" src="image/logo.png" alt=""></a>
+
+        <input type="checkbox" id="menu-bar" onchange="navChange">
+        <label for="menu-bar"><img class="menu-bar-img" src="image/menu.png" alt=""></label>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product +</a>
+                    <ul>
+                        <li><a href="#">Instruments</a></li>
+                        <li><a href="#">Reagants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="about us.html">About Us +</a>
+                    <ul>
+                        <li><a href="#">Biosystems</a></li>
+                        <li><a href="#">Multisera Group</a></li>
+                        <li><a href="#">Elga Tama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- content here -->
+    <div class="job-listing-head">
+        <h1>Vacancy</h1>
+    </div>
+    <div class="job-listing_container">
+        <div class="sub-job-listing_container">
+            <ul class="job-listing-title">
+                <li>UI/UX Design</li>
+            </ul>
+
+            <ul class="job-listing-department">
+                <li>Design</li>
+            </ul>
+
+            <ul class="job-listing-desc">
+                <li>20+ years experience designing desktop and mobile apps.</li>
+                <li>Passion in art</li>
+            </ul>
+
+            <ul class="job-listing-info">
+                <li>1d ago</li>
+            </ul>
+        </div>
+    </div>
+    <div class="job-listing_container">
+        <div class="sub-job-listing_container">
+            <ul class="job-listing-title">
+                <li>UI/UX Engineer</li>
+            </ul>
+
+            <ul class="job-listing-department">
+                <li>Design</li>
+            </ul>
+
+            <ul class="job-listing-desc">
+                <li>20+ years experience designing desktop and mobile apps.</li>
+                <li>Passion in art</li>
+                <li>Passion in anime</li>
+            </ul>
+
+            <ul class="job-listing-info">
+                <li>4d ago</li>
+            </ul>
+        </div>
+    </div>
+    <div class="job-listing_container">
+        <div class="sub-job-listing_container">
+            <ul class="job-listing-title">
+                <li>Accountant</li>
+            </ul>
+
+            <ul class="job-listing-department">
+                <li>Accounting</li>
+            </ul>
+
+            <ul class="job-listing-desc">
+                <li>40+ years experience with...math ?</li>
+                <li>Passion in...number?</li>
+            </ul>
+
+            <ul class="job-listing-info">
+                <li>80d ago</li>
+            </ul>
+        </div>
+    </div>
+    <div class="job-listing_container">
+        <div class="sub-job-listing_container">
+            <ul class="job-listing-title">
+                <li>Warrior</li>
+            </ul>
+
+            <ul class="job-listing-department">
+                <li>Guardian</li>
+            </ul>
+
+            <ul class="job-listing-desc">
+                <li>40 or more confirmed dragon kill</li>
+                <li>Big sword</li>
+                <li>Biger balls</li>
+            </ul>
+
+            <ul class="job-listing-info">
+                <li>180d ago</li>
+            </ul>
+        </div>
+    </div>
+    <div class="job-listing_container">
+        <div class="sub-job-listing_container">
+            <ul class="job-listing-title">
+                <li>Weed roller</li>
+            </ul>
+
+            <ul class="job-listing-department">
+                <li>Weed and Stuff</li>
+            </ul>
+
+            <ul class="job-listing-desc">
+                <li>2 years rollin' blunts</li>
+                <li>Never smoked weed</li>
+                <li>Smoked weed atleast once a day</li>
+            </ul>
+
+            <ul class="job-listing-info">
+                <li>80d ago</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+    <nav class="bot-nav">
+        <div class="bot-wrapper">
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-youtube-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+
+<script>
+    document.getElementById("menu-bar").onchange = function() {navChange()};
+
+    function navChange(){
+        if ( $('#menu-bar').is(":checked")) {
+        document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
+        } else {
+            document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
+        }
+    }
+    
+</script>
+    
+</body>
+</html>

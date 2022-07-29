@@ -249,7 +249,9 @@ header {
         margin: 10px 0 0 0 ;
         box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        border-width: 0 0 0 10px;
+        border-left: solid #333;
+        border-right: solid #333;
+        // border-width: 0 0 0 10px;
         width: 90%;
         align-content: center;
         justify-content: center;
@@ -258,14 +260,28 @@ header {
             list-style-type: none;
             padding: 10px;
             margin: 0;
+            width: 100%;
             li {
+                display: flex;
                 align-items: center;
-                justify-items: center;
-                img {
-                    width: 120px;height: 120px;
-                    &:hover {
-                        width: 140px;height: 140px;
-                        transition: .2s;
+                justify-content: center;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .bio-logo {
+                        width: 60%;height: 60%;
+                        &:hover {
+                            width: 70%;height: 70%;
+                            transition: .2s;
+                        }   
+                    }
+                    .elgatama-logo{
+                        width: 40%;height: 40%; 
+                        &:hover {
+                            width: 50%;height: 50%;
+                            transition: .2s;
+                        }
                     }
                 }
                 p {
@@ -276,6 +292,62 @@ header {
             }
         }
     }
+    
+}
+
+.job-listing-head {
+    margin-top: 80px;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+.job-listing_container {
+    display: flex;
+    flex-direction: column;
+    .sub-job-listing_container {
+        padding: 1em 0 1em 0;
+        // background-color: rgb(245, 245, 245);
+        margin: 10px 10px 0 10px ;
+        box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        border-width: 0 0 0 10px;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0.3em 0 0 0;
+            li {
+              margin: 0 0 0 1.5em;
+            }
+          }
+
+        .job-listing-department {
+            font-size: small;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .job-listing-desc {
+            flex-direction: column;
+            list-style-type: unset;
+            font-size: small;
+            margin: 10px 10px 10px 10px;
+            opacity: 0.8;
+            display: none;
+        }
+        &:hover {
+            .job-listing-desc {
+                display: flex;
+            }
+        }
+
+        .job-listing-info {
+            font-size: smaller;
+            opacity: 0.5;
+        }
+    }
+
     
 }
 
@@ -317,8 +389,8 @@ header {
         .about-banner {
             ul {
                 li {
-                    img {
-                        width: 80px;height: 80px;
+                    a,img {
+                        width: 50%;height: 30%;
                     }
                 }
             }
@@ -362,6 +434,18 @@ header {
             }
         }
     }
+    .about-container {
+        .about-banner {
+            ul {
+                li {
+                    a,img {
+                        width: 30%;height: 30%;
+                    }
+                }
+            }
+        }
+    }
+
 
 
 }
