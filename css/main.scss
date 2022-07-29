@@ -235,16 +235,17 @@ header {
 
 .about-container {
     display: flex;
-    position: absolute;
-    top: 5%;
+    // position: absolute;
+    top: 20%;
     flex-direction: column;
     width: 100%;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    height: 100vh;
 
     .about-banner {
         display: flex;
-        padding: 1em 0 1em 0;
+        padding: 0;
         margin: 10px 0 0 0 ;
         box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
@@ -255,52 +256,26 @@ header {
 
         ul {
             list-style-type: none;
-            padding: 0;
+            padding: 10px;
             margin: 0;
             li {
                 align-items: center;
                 justify-items: center;
                 img {
-                    width: 80px;height: 80px;
+                    width: 120px;height: 120px;
+                    &:hover {
+                        width: 140px;height: 140px;
+                        transition: .2s;
+                    }
+                }
+                p {
+                    text-align: center;
+                    padding: 0 10px 10px 10px;
+                    margin: 0;
                 }
             }
         }
     }
-
-    // a {
-    //     color: var(--text-color);
-    //     text-decoration: none;
-    //     margin: 10px 0 0 0;
-
-    //     .about-banner {
-    //     width: 100%;
-    //     align-items: center;
-    //     justify-content: center;
-    //     display: flex;
-    //     flex-direction: column;
-    //     padding: 1em 0 1em 0;
-    //     margin: 10px 10px 0 10px ;
-    //     box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
-    //     border-radius: 10px;
-        
-    //     p {
-    //         font-weight: bold;
-    //         margin: 10px;
-    //         margin: 0;
-    //         padding-bottom: 20px;
-    //     }
-    //     .elgatama-logo {
-    //         width: 100px;height: 100px;
-            
-    //     }
-    //     &:hover {
-    //         .elgatama-logo {
-    //             width: 120px;height: 120px;
-    //             transition: 0.1s ease-in-out;
-    //         }
-    //     }
-    // }
-    // }
     
 }
 
@@ -335,6 +310,17 @@ header {
 
             img {
                 height: 8.6em;width: 8.6em;
+            }
+        }
+    }
+    .about-container {
+        .about-banner {
+            ul {
+                li {
+                    img {
+                        width: 80px;height: 80px;
+                    }
+                }
             }
         }
     }

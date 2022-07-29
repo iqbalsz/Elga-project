@@ -299,8 +299,7 @@ header label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 5%;
+  top: 20%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -309,14 +308,17 @@ header label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
 .about-container .about-banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em 0 1em 0;
+  padding: 0;
   margin: 10px 0 0 0;
   -webkit-box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
           box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.2);
@@ -332,7 +334,7 @@ header label {
 
 .about-container .about-banner ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
   margin: 0;
 }
 
@@ -344,8 +346,21 @@ header label {
 }
 
 .about-container .about-banner ul li img {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
+}
+
+.about-container .about-banner ul li img:hover {
+  width: 140px;
+  height: 140px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.about-container .about-banner ul li p {
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  margin: 0;
 }
 
 @media only screen and (min-width: 680px) {
@@ -392,6 +407,10 @@ header label {
   .button-nav .menu__item img {
     height: 8.6em;
     width: 8.6em;
+  }
+  .about-container .about-banner ul li img {
+    width: 80px;
+    height: 80px;
   }
 }
 
