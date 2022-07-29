@@ -21,7 +21,7 @@
         
         <div class="navbar">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Product +</a>
                     <ul>
                         <li><a href="#">Instruments</a></li>
@@ -30,7 +30,7 @@
                 </li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Careers</a></li>
-                <li><a href="about us.html">About Us +</a>
+                <li><a href="#" class="active">About Us +</a>
                     <ul>
                         <li><a href="#">Biosystems</a></li>
                         <li><a href="#">Multisera Group</a></li>
@@ -43,19 +43,29 @@
 
     </header>
 
-    <!-- background slider -->
-    <div class="bg-slider">
-        <div class="bg-images">
+    <!-- content here -->
+    <div class="about-container">
+        <div class="about-banner">
+            <ul>
+                <li><p>Elgatama</p></li>
+                <li><img class="elgatama-logo" src="image/logo.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="about-banner">
+            <ul>
+                <li><p>Elgatama</p></li>
+                <li><img class="elgatama-logo" src="image/logo.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="about-banner">
+            <ul>
+                <li><p>Elgatama</p></li>
+                <li><img class="elgatama-logo" src="image/logo.png" alt=""></li>
+            </ul>
         </div>
     </div>
+    
 
-    <div class="button-nav">
-        <a href="#" class="menu__item" data-hover="Help"><img src="image/help.png" alt="" class="menu__help"></a>
-        <a href="#" class="menu__item" data-hover="About Us"><img src="image/aboutus.png" alt="" class="menu__about"></a>
-        <a href="#" class="menu__item" data-hover="Product"><img src="image/productx.png" alt="" class="menu__product"></a>
-        <a href="#" class="menu__item" data-hover="Careers"><img src="image/careers.png" alt="" class="menu__careers"></a>
-        <a href="#" class="menu__item" data-hover="Events"><img src="image/events.png" alt="" class="menu__events"></a>
-    </div>
 
 
     <nav class="bot-nav">
@@ -80,18 +90,6 @@
 
 
 <script>
-    // var $cb = $('#menu-bar').is(':checked')
-
-    // if ($cb) {
-    //     alert('checked');
-    // };
-    // if ($('#menu-bar').is(':checked')){
-    //     document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
-    //     alert('checked');
-    // }
-    // if (cb.checked == true){
-    //     document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
-    // }
     document.getElementById("menu-bar").onchange = function() {navChange()};
 
     function navChange(){
