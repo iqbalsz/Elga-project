@@ -658,6 +658,7 @@ header label {
 }
 
 .about-elgatama .elgatama-text h1 {
+  font-weight: bold;
   text-align: center;
 }
 
