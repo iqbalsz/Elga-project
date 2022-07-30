@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     min-height: 100vh;
     // background-color: white;
     background-size: cover;
@@ -40,17 +40,21 @@ header {
     justify-content: space-between;
     z-index: 1000;
     border-radius: 0 0 25px 25px;
+    transition: 0.1s;
 
     .navbar {
         position: absolute;
         top: 100%; left: 0; right: 0;
         background: #333;
-        border-top: 1px solid rgba($color: #000000, $alpha: .1);
-        display: none;
+        // border-top: 1px solid rgba($color: #000000, $alpha: .1);
+        // display: none;
+        height: 0;
+        transition: 0.1s;
 
         ul {
             list-style: none;
             padding-left: 0;
+            visibility: hidden;
             li {
                 // width: 100%;
                 &:focus-within>ul,
@@ -88,9 +92,14 @@ header {
 }
 
 #menu-bar:checked ~ .navbar{
-    display: initial;
+    // display: initial;
+    height: 100vh;
+    transition: 0.2s;
     // -webkit-animation: fadeIn 1s;
     // animation: fadeIn 1s;
+    ul {
+        visibility: visible;
+    }
 }
 
 // @-webkit-keyframes fadeIn {
@@ -142,6 +151,7 @@ header {
     overflow-x: auto;
     margin: 0 0 0 0;
     border-radius: 25px 25px 0 0;
+    z-index: 1001;
     
     .bot-wrapper {
       display: flex;
@@ -384,8 +394,90 @@ header {
             opacity: 0.5;
         }
     }
+}
 
-    
+.help-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    .help-text {
+        text-align: center;
+        h1{
+            font-size: 130%;
+            font-weight: unset;
+            margin: 0;
+        }
+        p {
+            font-size: 80%;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .help-link-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .help-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            a {             //create a new wrapper for this so it wont be as big
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    
+                    width: 50%;
+                }
+            }
+            #help-nama,#help-department {
+                font-size: 45%;
+                margin: 0;
+            }
+            #help-nama {
+                font-weight: bold;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+.about-elgatama {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .elgatama-pict {
+        display: inherit;
+        justify-content: center;
+        img {
+            width: 50%;
+        }
+    }
+    .elgatama-text {
+        margin-bottom: 50px;
+        padding-inline: 10%;
+        h1{
+            text-align: center;
+        }
+        p,li {
+            font-size: .8em;
+            text-align: justify;
+        }
+        p#sub {
+            text-align: center;
+            font-weight: bold;
+        }
+    }
 }
 
 @media only screen and (min-width: 680px) {
@@ -448,55 +540,33 @@ header {
             }
         }
     }
-}
 
-.help-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
-    .help-text {
-        h1{
-            font-size: 130%;
-            font-weight: unset;
+    .help-container {
+        .help-text {
+            text-align: center;
+       
         }
-    }
-
-    .help-link-wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .help-link {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                img {
-                    
-                    width: 50%;
+        .help-link-wrapper {
+            .help-link {     
+                a {             //create a new wrapper for this so it wont be as big
+                    img {
+                        width: 50%;
+                    }
+                }
+                #help-nama,#help-department {
+                    font-size: 70%;
+              
+                }
+                #help-nama {
+                    font-weight: unset;
+                    padding-top: 5px;
                 }
             }
-            #help-nama,#help-department {
-                font-size: 60%;
-                margin: 0;
-            }
-            #help-nama {
-                font-weight: bold;
-                padding-top: 5px;
-            }
         }
     }
-
-
 }
+
+
 
 @media only screen and (min-width: 900px) {
     label {
@@ -511,7 +581,9 @@ header {
     header .navbar {
         display: unset;
         position: unset;
+        height: unset;
         ul {
+            visibility: visible;
             margin: 0;
 
             li {
@@ -533,6 +605,11 @@ header {
             }
         }
     }
+
+    #menu-bar:checked ~ .navbar{
+        height: unset;
+    }
+    
     .about-container {
         .about-banner {
             ul {
@@ -558,6 +635,23 @@ header {
         }
     }
 
+    .help-container { 
+       .help-link-wrapper {
+            margin-inline: 20%;
+        }
+    }
+
+    .about-elgatama {
+        margin-top: 60px;
+        .elgatama-text {
+            padding-inline: 5%;
+            margin-bottom: 75px;
+            p,li {
+                line-height: 1.4em;
+                font-size: 1em;
+            }
+        }
+    }
 
 
 }

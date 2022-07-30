@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elga Tama</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+
+    <header class="nav-container">
+        <a href=""><img class="nav-logo" src="image/logo.png" alt=""></a>
+
+        <input type="checkbox" id="menu-bar" onchange="navChange">
+        <label for="menu-bar"><img class="menu-bar-img" src="image/menu.png" alt=""></label>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product +</a>
+                    <ul>
+                        <li><a href="#">Instruments</a></li>
+                        <li><a href="#">Reagants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="about us.html">About Us +</a>
+                    <ul>
+                        <li><a href="#">Biosystems</a></li>
+                        <li><a href="#">Multisera Group</a></li>
+                        <li><a href="#">Elga Tama</a></li>
+                    </ul>
+                </li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- content here -->
+    <div class="about-elgatama">
+        <div class="elgatama-pict">
+            <img src="image/logo.png" alt="">
+        </div>
+
+        <div class="elgatama-text">
+            <h1>PT. Elga Tama</h1>
+            <p>PT. Elga Tama adalah perusahaan perdagangan alat kesehatan dengan IDAK No. 9120100850429 yang berlokasi di Jl. Kyai Caringin 18A-20 di Cideng, Jakarta Pusat. Perusahaan ini didirikan pada tanggal 16 September 2005 oleh bapak M. Rochimi selaku pendiri dan pemilik saham terbesar dari jaringan perusahaan alkes Multisera Group.<br>
+                Fungsi awal didirikannya PT. Elga Tama adalah sebagai distributor yang fokus mendistribusikan produk IVD Kimia Klinik Automatic merek BioSystems dari Barcelona-Spain, secara terpisah dari PT. Multisera Indosa yang sudah mengageni produk BioSystems non-automatic+. <br>
+                Seiring waktu dan alasan efektivitas, per tahun 2021 PT. Elga Tama dijadikan satu-satunya distributor produk IVD kimia klinik+ dari BioSystems. <br>
+                BioSystems.S.A. sebagai salah satu merek reagent & instrument kimia klinik+ terintegrasi terbaik di dunia, bersama PT. Elga Tama dan Multisera Group telah dibesarkan sejak 1993 di Indonesia dengan produk andalan BioSystems sebagai salah satu merek reagent & instrument kimia klinik terintegrasi terbaik di dunia. Terbukti banyak dipercaya dan digunakan secara jangka panjang oleh banyak instansi medis seperti Laboratorium Rumah Sakit, Laboratorium Swasta, BBLK, Labkesda, Poltekkes, Klinik dan Puskesmas di seluruh daerah di Indonesia. Dengan progres perkembangan yang stabil hingga saat ini, PT. Elga Tama berkomitmen untuk meningkatkan kualitas pelayanan kesehatan di Indonesia dengan cara meningkatkan performa semua lini baik dari internal perusahaan, rekanan dan khususnya konsumen.
+            </p>
+
+            <p id="sub">VISI</p>
+            <p>Menjadi distributor produk IVD berkualitas, yang memberikan solusi bisnis terbaik ke rekanan dan konsumen, serta berkontribusi dalam peningkatan kualitas kesehatan di Indonesia.
+            </p>
+
+            <p id="sub">MISI</p>
+            <li>Mampu mengejar target perusahaan yang adaptif sembari meningkatkan performa setiap lini perusahaan secara berkesinambungan sesuai regulasi yang berlaku. <br><br>
+            </li>
+            <li>Mendistribusikan produk IVD terbaik sesuai rekomendasi pabrikan dan regulasi Kemenkes, didukung dengan layanan purna jual yang maksimal. <br><br>
+            </li>
+            <li>Memberikan solusi bisnis terbaik menyesuaikan kebutuhan rekanan dan konsumen, serta mendukung peningkatan performanya secara berkesinambungan. <br><br>
+            </li>
+            <li>Meningkatkan kualitas kesehatan dan pelayanan medis di Indonesia dengan cara mengedukasi, mensosialisasikan dan mendistribusikan produk yang inovatif. <br><br>
+            </li>
+            <li>Meningkatkan performa jaringan tim pemasaran dan purna jual di Indonesia secara terintegrasi, demi mencapai pelayanan konsumen yang sangat responsif dan memuaskan.
+            </li>
+        </div>
+    </div>
+    
+
+
+    <!-- bot-nav-start -->
+    <nav class="bot-nav">
+        <div class="bot-wrapper">
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-youtube-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+
+<script>
+    document.getElementById("menu-bar").onchange = function() {navChange()};
+
+    function navChange(){
+        if ( $('#menu-bar').is(":checked")) {
+        document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
+        } else {
+            document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
+        }
+    }
+    
+</script>
+    
+</body>
+</html>
