@@ -186,6 +186,63 @@ header label {
   opacity: 0.7;
 }
 
+.bot-nav .map-address-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-inline: 10px;
+}
+
+.bot-nav .map-address-wrapper .map {
+  display: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.bot-nav .map-address-wrapper .map img {
+  width: 85%;
+  border-radius: 10px;
+}
+
+.bot-nav .map-address-wrapper p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 15px;
+  font-size: 0.5em;
+  width: 300%;
+}
+
+.bot-nav .socmed-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bot-nav .socmed-wrap p {
+  color: var(--text-color);
+  font-size: 0.6em;
+  margin: 0;
+}
+
 .bg-slider {
   background-image: url(../image/bg.jpg), url(../image/bg1.jpg), url(../image/bg2.jpg), url(../image/bg3.jpg), url(../image/bg4.jpg), url(../image/bg5.jpg), url(../image/bg6.jpg), url(../image/bg7.jpg), url(../image/bg8.jpg), url(../image/bg9.jpg), url(../image/bg10.jpg), url(../image/bg11.jpg), url(../image/bg12.jpg), url(../image/bg13.jpg);
   background-size: cover;
@@ -514,6 +571,105 @@ header label {
     width: 50%;
     height: 30%;
   }
+  .bot-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bot-nav .map-address-wrapper {
+    padding-inline: 3%;
+  }
+  .bot-nav .map-address-wrapper p {
+    font-size: 0.7em;
+  }
+  .bot-nav .socmed-wrap {
+    padding-inline: 3%;
+  }
+  .bot-nav .socmed-wrap .bot-wrapper {
+    margin: 0;
+  }
+}
+
+.help-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help-container .help-text h1 {
+  font-size: 130%;
+  font-weight: unset;
+}
+
+.help-container .help-link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help-container .help-link-wrapper .help-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.help-container .help-link-wrapper .help-link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help-container .help-link-wrapper .help-link a img {
+  width: 50%;
+}
+
+.help-container .help-link-wrapper .help-link #help-nama, .help-container .help-link-wrapper .help-link #help-department {
+  font-size: 60%;
+  margin: 0;
+}
+
+.help-container .help-link-wrapper .help-link #help-nama {
+  font-weight: bold;
+  padding-top: 5px;
 }
 
 @media only screen and (min-width: 900px) {
@@ -549,6 +705,18 @@ header label {
   .about-container .about-banner ul li a, .about-container .about-banner ul li img {
     width: 30%;
     height: 30%;
+  }
+  .bot-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .bot-nav .map-address-wrapper p {
+    font-size: 0.8em;
+  }
+  .bot-nav .socmed-wrap .bot-wrapper {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

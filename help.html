@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elga Tama</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="nav-container">
+        <a href=""><img class="nav-logo" src="image/logo.png" alt=""></a>
+
+        <input type="checkbox" id="menu-bar" onchange="navChange">
+        <label for="menu-bar"><img class="menu-bar-img" src="image/menu.png" alt=""></label>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product +</a>
+                    <ul>
+                        <li><a href="#">Instruments</a></li>
+                        <li><a href="#">Reagants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about us.html">About Us +</a>
+                    <ul>
+                        <li><a href="#">Biosystems</a></li>
+                        <li><a href="#">Multisera Group</a></li>
+                        <li><a href="#">Elga Tama</a></li>
+                    </ul>
+                </li>
+                <li><a href="help.html" class="active">Help</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- content here -->
+    <div class="help-container">
+        <div class="help-text">
+            <h1>Contact Us in the Way You Need</h1>
+        </div>
+        <div class="help-link-wrapper">
+            <div class="help-link">
+                <a href="#"><img src="image/map.jpg" alt=""></a>
+                <p id="help-nama">Elga Tama</p>
+                <p id="help-department">Central Affair</p>
+            </div>
+            <div class="help-link">
+                <a href="#"><img src="image/map.jpg" alt=""></a>
+                <p id="help-nama">Elga Tama</p>
+                <p id="help-department">Central Affair</p>
+            </div>
+            <div class="help-link">
+                <a href="#"><img src="image/map.jpg" alt=""></a>
+                <p id="help-nama">Elga Tama</p>
+                <p id="help-department">Central Affair</p>
+            </div>
+            <div class="help-link">
+                <a href="#"><img src="image/map.jpg" alt=""></a>
+                <p id="help-nama">Elga Tama</p>
+                <p id="help-department">Central Affair</p>
+            </div>
+            <div class="help-link">
+                <a href="#"><img src="image/map.jpg" alt=""></a>
+                <p id="help-nama">Elga Tama</p>
+                <p id="help-department">Central Affair</p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <nav class="bot-nav">
+        <div class="map-address-wrapper">
+            <div class="map"><img src="image/map.jpg" alt=""></div>
+            <p>Jl. Kyai Caringin No.18-A RT 10/RW 4. Cideng, Kecamatan Gambir, Kota Jakarta Pusat. Daerah Khusus ibukota Jakarta 10150</p>
+        </div>
+        <div class="socmed-wrap">
+            <p>Our social media</p>
+            <div class="bot-wrapper">
+                <a href="#" class="bot-nav__link">
+                    <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="#" class="bot-nav__link">
+                    <i class="fa fa-twitter-square"></i>
+                </a>
+                <a href="#" class="bot-nav__link">
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+                <a href="#" class="bot-nav__link">
+                    <i class="fa fa-youtube-square"></i>
+                </a>
+                <a href="#" class="bot-nav__link">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+<script>
+    document.getElementById("menu-bar").onchange = function() {navChange()};
+
+    function navChange(){
+        if ( $('#menu-bar').is(":checked")) {
+        document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
+        } else {
+            document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
+        }
+    }
+    
+</script>
+    
+</body>
+</html>

@@ -169,6 +169,43 @@ header {
         opacity: 0.7;
       }
     }
+
+    .map-address-wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-inline: 10px;
+        .map {
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            // flex-shrink: 2;
+            img {
+                width: 85%;
+                border-radius: 10px;
+            }
+        }
+        
+        p {
+            color: var(--text-color);
+            margin: 0;
+            padding: 15px;
+            font-size: 0.5em;
+            width: 300%;
+        }
+    }
+    .socmed-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            color: var(--text-color);
+            font-size: 0.6em;
+            margin: 0;
+        }
+
+    }
 }
 
 
@@ -396,6 +433,68 @@ header {
             }
         }
     }
+    .bot-nav {
+        flex-direction: row;
+        .map-address-wrapper {
+            padding-inline: 3%;
+            p {
+                font-size: 0.7em;
+            }
+        }
+        .socmed-wrap {
+            padding-inline: 3%;
+            .bot-wrapper {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.help-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .help-text {
+        h1{
+            font-size: 130%;
+            font-weight: unset;
+        }
+    }
+
+    .help-link-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .help-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    
+                    width: 50%;
+                }
+            }
+            #help-nama,#help-department {
+                font-size: 60%;
+                margin: 0;
+            }
+            #help-nama {
+                font-weight: bold;
+                padding-top: 5px;
+            }
+        }
+    }
+
 
 }
 
@@ -442,6 +541,19 @@ header {
                         width: 30%;height: 30%;
                     }
                 }
+            }
+        }
+    }
+    .bot-nav {
+        flex-direction: row;
+        .map-address-wrapper {
+            p {
+                font-size: 0.8em;
+            }
+        }
+        .socmed-wrap {
+            .bot-wrapper {
+                margin: 0;
             }
         }
     }
