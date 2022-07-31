@@ -451,7 +451,7 @@ header {
 }
 
 .about-elgatama {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -459,8 +459,14 @@ header {
     .elgatama-pict {
         display: inherit;
         justify-content: center;
+        position: absolute;
+        top: 36%;
         img {
-            width: 50%;
+            padding: 5px;
+            background: white;
+            // background-size: 50%;
+            border-radius: 100px;
+            width: 10%;
         }
     }
     .elgatama-text {
@@ -477,7 +483,27 @@ header {
         p#sub {
             text-align: center;
             font-weight: bold;
+        }   
+    }
+    #multisera {
+        margin-bottom: 0;
+    }
+    .multisera-group {
+        img {
+            width: 100%;
         }
+   
+    }
+}
+
+.banner-container {
+    // width: 300px;
+    overflow: hidden;
+    margin-top: 80px;
+    background: white;
+    .about-banner {
+        display: flex;flex-direction: row;
+        height: 180px;
     }
 }
 
@@ -563,6 +589,23 @@ header {
                     padding-top: 5px;
                 }
             }
+        }
+    }
+
+    .banner-container {
+        display: flex;flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .about-banner {
+            display: flex;flex-direction: row;
+            height: 250px;
+            justify-content: center;
+        }
+    }
+
+    .about-elgatama {
+        .elgatama-pict {
+            top: 48%;
         }
     }
 }

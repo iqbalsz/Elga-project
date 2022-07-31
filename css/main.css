@@ -627,7 +627,7 @@ header label {
 }
 
 .about-elgatama {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,10 +646,15 @@ header label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 36%;
 }
 
 .about-elgatama .elgatama-pict img {
-  width: 50%;
+  padding: 5px;
+  background: white;
+  border-radius: 100px;
+  width: 10%;
 }
 
 .about-elgatama .elgatama-text {
@@ -670,6 +675,31 @@ header label {
 .about-elgatama .elgatama-text p#sub {
   text-align: center;
   font-weight: bold;
+}
+
+.about-elgatama #multisera {
+  margin-bottom: 0;
+}
+
+.about-elgatama .multisera-group img {
+  width: 100%;
+}
+
+.banner-container {
+  overflow: hidden;
+  margin-top: 80px;
+  background: white;
+}
+
+.banner-container .about-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 180px;
 }
 
 @media only screen and (min-width: 680px) {
@@ -751,6 +781,37 @@ header label {
   .help-container .help-link-wrapper .help-link #help-nama {
     font-weight: unset;
     padding-top: 5px;
+  }
+  .banner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner-container .about-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 250px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-elgatama .elgatama-pict {
+    top: 48%;
   }
 }
 
