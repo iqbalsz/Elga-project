@@ -507,6 +507,26 @@ header {
     }
 }
 
+.event-container {
+    box-sizing: border-box;
+
+    .event-slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        .eventSlide1, .eventSlide2, .eventSlide3 {
+            display: none;
+            img {
+                height: 100px;
+                vertical-align: middle;
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+
 @media only screen and (min-width: 680px) {
     .button-nav {
         position: absolute;

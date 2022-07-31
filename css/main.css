@@ -702,6 +702,27 @@ header label {
   height: 180px;
 }
 
+.event-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.event-container .event-slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.event-container .event-slideshow-container .eventSlide1, .event-container .event-slideshow-container .eventSlide2, .event-container .event-slideshow-container .eventSlide3 {
+  display: none;
+}
+
+.event-container .event-slideshow-container .eventSlide1 img, .event-container .event-slideshow-container .eventSlide2 img, .event-container .event-slideshow-container .eventSlide3 img {
+  height: 100px;
+  vertical-align: middle;
+  width: 50%;
+}
+
 @media only screen and (min-width: 680px) {
   .button-nav {
     position: absolute;
