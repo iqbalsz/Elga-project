@@ -24,7 +24,7 @@
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Product +</a>
+                <li><a href="products.html">Product +</a>
                     <ul>
                         <li><a href="#">Instruments</a></li>
                         <li><a href="#">Reagants</a></li>
@@ -55,16 +55,16 @@
             <p>Learn more about our BioSystems Instruments and Reagents</p>
         </div>
         <div class="reagents-link-cont">
-            <a href="#" class="reagents__link">Reagents</a>
+            <a href="#" class="reagents__link" onmouseover="remouseOver()" onmouseout="remouseOut()">Reagents</a>
         </div>
     </div>
-    
+
     <div class="product-index-container">
         <div class="instrument-bg">
             <img class="ins-img" src="image/instruments.png" alt="">
         </div>
         <div class="reagents-bg">
-            <img src="image/reagent.png" alt="">
+            <img class="re-img"" src="image/reagent.png" alt="">
         </div>
     </div>
     
@@ -104,12 +104,21 @@
     }
     
     // Link image animation
+    
     function inmouseOver() {
-        document.getElementsByClassName("instrument-bg").style = "padding-right: 100px";
+        document.getElementsByClassName("ins-img")[0].style = "height: 400px; transition: .2s;";
     }
 
     function inmouseOut() {
-        document.getElementsByClassName("ins-img").style = "height: 500px";
+        document.getElementsByClassName("ins-img")[0].style = "height: 300px; transition: .2s;";
+    }
+
+    function remouseOver() {
+        document.getElementsByClassName("re-img")[0].style = "height: 400px; transition: .2s;";
+    }
+
+    function remouseOut() {
+        document.getElementsByClassName("re-img")[0].style = "height: 300px; transition: .2s;";
     }
 </script>
     
