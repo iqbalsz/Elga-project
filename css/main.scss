@@ -517,7 +517,7 @@ header {
         max-width: 100%;
         position: relative;
         margin: auto;
-        padding: 20px;
+        padding-inline: 30px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -531,7 +531,7 @@ header {
             img {
                 // height: 100px;
                 vertical-align: middle;
-                width: 200%;
+                width: 250%;
                 margin-inline: auto;
                 
             }
@@ -541,13 +541,14 @@ header {
             top:81%;
             left: 5%;
             #event-title {
-                font-size: medium;
+                font-size: x-large;
                 font-weight: bold;
                 margin: 0;
             }
             .event-info {
                 font-size: x-small;
                 display: flex;
+                justify-content: space-between;
             }
         }
     }

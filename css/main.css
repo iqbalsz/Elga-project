@@ -713,7 +713,7 @@ header label {
   max-width: 100%;
   position: relative;
   margin: auto;
-  padding: 20px;
+  padding-inline: 30px;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,7 +738,7 @@ header label {
 
 .event-container .event-slideshow-container .eventSlide1 img, .event-container .event-slideshow-container .eventSlide2 img, .event-container .event-slideshow-container .eventSlide3 img {
   vertical-align: middle;
-  width: 200%;
+  width: 250%;
   margin-inline: auto;
 }
 
@@ -749,7 +749,7 @@ header label {
 }
 
 .event-container .event-slideshow-container .desc-event #event-title {
-  font-size: medium;
+  font-size: x-large;
   font-weight: bold;
   margin: 0;
 }
@@ -759,6 +759,9 @@ header label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .event-container .prev, .event-container .next {
