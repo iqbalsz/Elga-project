@@ -733,7 +733,6 @@ header label {
 .event-container .event-slideshow-container .eventSlide1, .event-container .event-slideshow-container .eventSlide2, .event-container .event-slideshow-container .eventSlide3 {
   display: none;
   overflow: hidden;
-  top: 50%;
   border-radius: 25px;
 }
 
