@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elga Tama</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+
+    <header class="nav-container">
+        <a href=""><img class="nav-logo" src="image/logo.png" alt=""></a>
+
+        <input type="checkbox" id="menu-bar" onchange="navChange">
+        <label for="menu-bar"><img class="menu-bar-img" src="image/menu.png" alt=""></label>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Product +</a>
+                    <ul>
+                        <li><a href="#">Instruments</a></li>
+                        <li><a href="#">Reagants</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Events</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="about us.html">About Us +</a>
+                    <ul>
+                        <li><a href="#">Biosystems</a></li>
+                        <li><a href="multisera.html">Multisera Group</a></li>
+                        <li><a href="elgatama.html">Elga Tama</a></li>
+                    </ul>
+                </li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- content here -->
+    <div class="product-index-text">
+        <div class="instruments-link-cont">
+            <a href="#" class="instruments__link" onmouseover="inmouseOver()" onmouseout="inmouseOut()">Instruments</a>
+        </div>
+        <div class="product-mid">
+            <h1>Our Product</h1>
+            <p>Learn more about our BioSystems Instruments and Reagents</p>
+        </div>
+        <div class="reagents-link-cont">
+            <a href="#" class="reagents__link">Reagents</a>
+        </div>
+    </div>
+    
+    <div class="product-index-container">
+        <div class="instrument-bg">
+            <img class="ins-img" src="image/instruments.png" alt="">
+        </div>
+        <div class="reagents-bg">
+            <img src="image/reagent.png" alt="">
+        </div>
+    </div>
+    
+
+
+
+    <nav class="bot-nav">
+        <div class="bot-wrapper">
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-youtube-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+
+<script>
+    document.getElementById("menu-bar").onchange = function() {navChange()};
+
+    function navChange(){
+        if ( $('#menu-bar').is(":checked")) {
+        document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
+        } else {
+            document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
+        }
+    }
+    
+    // Link image animation
+    function inmouseOver() {
+        document.getElementsByClassName("instrument-bg").style = "padding-right: 100px";
+    }
+
+    function inmouseOut() {
+        document.getElementsByClassName("ins-img").style = "height: 500px";
+    }
+</script>
+    
+</body>
+</html>

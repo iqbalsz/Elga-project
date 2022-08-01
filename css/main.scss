@@ -525,6 +525,82 @@ header {
     }
 }
 
+.product-index-text {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .instruments-link-cont,.reagents-link-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-family: sans-serif;
+            // color: var(--accent-color);
+            color: red;
+            text-transform: uppercase;
+            font-weight: bold;
+            transform: rotate(180deg);
+            writing-mode: vertical-rl;
+            text-decoration: none;
+            padding: 30px;
+            margin: 0;
+            font-size: xx-large;
+
+            &:hover {
+                // font-size: x-large;
+                font-style: italic;
+                transition: .2s;
+            }
+        }
+    }
+    .product-mid {
+        h1 {
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-block: 10px
+        }
+        p {
+            font-size: x-small;
+            margin: 0;
+        }
+    }
+}
+
+.product-index-container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    overflow: hidden;
+    
+    .instrument-bg,.reagents-bg {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 90px;
+        height: 100%;
+        // width: auto;
+        overflow: hidden;
+        img {
+            width: auto;
+            height: 300px;
+        }
+    }
+    .instrument-bg {
+        padding-right: 70px;
+        justify-content: flex-end;
+    }
+    .reagents-bg {
+        padding-left: 70px;
+        justify-content: flex-start;
+    }
+}
+
 
 
 @media only screen and (min-width: 680px) {

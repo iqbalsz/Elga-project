@@ -723,6 +723,116 @@ header label {
   width: 50%;
 }
 
+.product-index-text {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.product-index-text .instruments-link-cont, .product-index-text .reagents-link-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-index-text .instruments-link-cont a, .product-index-text .reagents-link-cont a {
+  font-family: sans-serif;
+  color: red;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-decoration: none;
+  padding: 30px;
+  margin: 0;
+  font-size: xx-large;
+}
+
+.product-index-text .instruments-link-cont a:hover, .product-index-text .reagents-link-cont a:hover {
+  font-style: italic;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.product-index-text .product-mid h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-block: 10px;
+}
+
+.product-index-text .product-mid p {
+  font-size: x-small;
+  margin: 0;
+}
+
+.product-index-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: hidden;
+}
+
+.product-index-container .instrument-bg, .product-index-container .reagents-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 90px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-index-container .instrument-bg img, .product-index-container .reagents-bg img {
+  width: auto;
+  height: 300px;
+}
+
+.product-index-container .instrument-bg {
+  padding-right: 70px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.product-index-container .reagents-bg {
+  padding-left: 70px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media only screen and (min-width: 680px) {
   .button-nav {
     position: absolute;
