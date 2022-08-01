@@ -121,7 +121,8 @@ header label {
 
 .button-nav {
   position: fixed;
-  top: 70%;
+  bottom: 0;
+  margin-bottom: 60px;
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -740,6 +741,9 @@ header label {
   vertical-align: middle;
   width: 250%;
   margin-inline: auto;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .event-container .event-slideshow-container .desc-event {
@@ -909,7 +913,7 @@ header label {
 
 @media only screen and (min-width: 680px) {
   .button-nav {
-    position: absolute;
+    position: fixed;
     top: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -932,7 +936,7 @@ header label {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    color: black;
+    color: red;
     font-weight: bold;
     text-decoration: none;
     width: 8.6em;

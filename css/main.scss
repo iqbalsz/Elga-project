@@ -118,7 +118,9 @@ header {
 
 .button-nav{
     position: fixed;
-    top: 70%;
+    // top: 70%;
+    bottom: 0;
+    margin-bottom: 60px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -135,8 +137,46 @@ header {
             top: 70%;
         }
     }
-}
+    // .help_item {
+    //     margin-left: 40%;
+    //     transform: translateY(100%);
+    //     height: auto;
+    //     width: 70px;
+    // }
 
+    // .careers-item {
+    //     margin-left: 233%;
+    //     transform: translateY(-400%);
+    //     height: auto;
+    //     width: 90px;
+    // }
+    // .about-item {
+    //     margin-left: -150%;
+    //     transform: translateY(-200%);
+    //     height: auto;
+    //     width: 90px;
+    // }
+    // .product-item {
+    //     margin-left: -200%;
+    //     transform: translateY(-100%);
+    //     height: auto;
+    //     width: 90px;
+    //     a {
+    //         img {
+    //             width: auto;
+    //             height: 200px;
+    //         }
+    //     }
+    // }
+    // .events-item {
+    //     margin-left: 150%;
+    //     transform: translateY(-300%);
+    //     height: auto;
+    //     width: 90px;
+    // }
+
+    
+}
 
 .bot-nav {
     background-color: #333;
@@ -533,6 +573,8 @@ header {
                 vertical-align: middle;
                 width: 250%;
                 margin-inline: auto;
+                margin-left: 50%;
+                transform: translateX(-50%);
                 
             }
         }
@@ -663,7 +705,7 @@ header {
 
 @media only screen and (min-width: 680px) {
     .button-nav {
-        position: absolute;
+        position: fixed;
         top: 0%;
         display: flex;
         align-items: center;
@@ -676,7 +718,7 @@ header {
                 opacity: 0;
                 display: flex;
                 text-align: center;
-                color: black;
+                color: red;
                 font-weight: bold;
                 text-decoration: none;
                 width: 8.6em;
@@ -693,6 +735,7 @@ header {
             img {
                 height: 8.6em;width: 8.6em;
             }
+
         }
     }
     .about-container {
