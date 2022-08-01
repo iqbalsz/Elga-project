@@ -52,29 +52,36 @@
                 <img src="image/aboutUs-1.JPG" alt="">
             </div>
             <div class="eventSlide1">
-                <img src="image/aboutUs-2.JPG" alt="">
+                <img src="image/aboutUs-3.JPG" alt="">
             </div>
             <div class="eventSlide1">
-                <img src="image/aboutUs-3.JPG" alt="">
+                <img src="image/aboutUs-4.JPG" alt="">
             </div>
 
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;></a>
             <a class="next" onclick="plusSlides(1, 0)">&#10095;></a>
+            <div class="desc-event">
+                <p id="event-title">Perayaan Hari Kartini</p>
+                <div class="event-info">
+                    <p>PT. Elga Tama. Jakarta</p>
+                    <p>22 April 2022</p>
+                </div>
+            </div>
         </div>
     
     
         <div class="event-slideshow-container">
             <div class="eventSlide2">
-                <img src="image/aboutUs-1.JPG" alt="">
-            </div>
-            <div class="eventSlide2">
-                <img src="image/aboutUs-2.JPG" alt="">
-            </div>
-            <div class="eventSlide2">
                 <img src="image/aboutUs-3.JPG" alt="">
             </div>
             <div class="eventSlide2">
-                <img src="image/logo.png" alt="">
+                <img src="image/bg4.jpg" alt="">
+            </div>
+            <div class="eventSlide2">
+                <img src="image/aboutUs-1.JPG" alt="">
+            </div>
+            <div class="eventSlide2">
+                <img src="image/bg10.jpg" alt="">
             </div>
     
             <a class="prev" onclick="plusSlides(-1, 1)">&#10094;></a>
@@ -83,16 +90,16 @@
 
         <div class="event-slideshow-container">
             <div class="eventSlide3">
+                <img src="image/bg10.JPG" alt="">
+            </div>
+            <div class="eventSlide3">
+                <img src="image/bg12.jpg" alt="">
+            </div>
+            <div class="eventSlide3">
+                <img src="image/bg11.jpg" alt="">
+            </div>
+            <div class="eventSlide3">
                 <img src="image/aboutUs-1.JPG" alt="">
-            </div>
-            <div class="eventSlide3">
-                <img src="image/aboutUs-2.JPG" alt="">
-            </div>
-            <div class="eventSlide3">
-                <img src="image/aboutUs-3.JPG" alt="">
-            </div>
-            <div class="eventSlide3">
-                <img src="image/aboutUs-2.JPG" alt="">
             </div>
     
             <a class="prev" onclick="plusSlides(-1, 2)">&#10094;></a>
@@ -135,10 +142,11 @@
 
     // slide JS
     let slideIndex = [1,1,1];
-    let slideId = ["eventSlide1", "eventSlide2", "eventSLide3"]
+    let slideId = ["eventSlide1", "eventSlide2", "eventSlide3"]
     showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
+    
     
     // let x = document.getElementsByClassName("EventSlide2");
     // console.log(x);
@@ -150,15 +158,15 @@
    
 
     function showSlides(n, no) {
-    let i;
-    let x = document.getElementsByClassName(slideId[no]);
-    if (n > x.length) {slideIndex[no] = 1}    
-    if (n < 1) {slideId[no]}
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-        // console.log(n);
-    }
-    x[slideIndex[no]-1].style.display = "block";  
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+            // console.log(n);
+        }
+        x[slideIndex[no]-1].style.display = "block";  
     }
     
 </script>

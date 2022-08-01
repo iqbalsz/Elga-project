@@ -705,22 +705,94 @@ header label {
 .event-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+  margin: 0;
 }
 
 .event-container .event-slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+  padding: 20px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .event-container .event-slideshow-container .eventSlide1, .event-container .event-slideshow-container .eventSlide2, .event-container .event-slideshow-container .eventSlide3 {
   display: none;
+  overflow: hidden;
+  top: 50%;
+  border-radius: 25px;
 }
 
 .event-container .event-slideshow-container .eventSlide1 img, .event-container .event-slideshow-container .eventSlide2 img, .event-container .event-slideshow-container .eventSlide3 img {
-  height: 100px;
   vertical-align: middle;
-  width: 50%;
+  width: 200%;
+  margin-inline: auto;
+}
+
+.event-container .event-slideshow-container .desc-event {
+  position: absolute;
+  top: 81%;
+  left: 5%;
+}
+
+.event-container .event-slideshow-container .desc-event #event-title {
+  font-size: medium;
+  font-weight: bold;
+  margin: 0;
+}
+
+.event-container .event-slideshow-container .desc-event .event-info {
+  font-size: x-small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.event-container .prev, .event-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.event-container .prev:hover, .event-container .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.event-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.event-container .prev {
+  left: 0;
 }
 
 .product-index-text {
