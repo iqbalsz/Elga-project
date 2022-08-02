@@ -362,7 +362,7 @@ header {
                         height: 50px;width: auto;
                         padding-block: 20px;
                         &:hover {
-                            height: 70px;
+                            height: 60px;
                             transition: .2s;
                         }   
                     }
@@ -408,7 +408,7 @@ header {
             margin: 0;
             padding: 0.3em 0 0 0;
             li {
-              margin: 0 0 0 1.5em;
+              margin: 0 1.5em 0 1.5em;
             }
           }
 
@@ -416,6 +416,8 @@ header {
             font-size: small;
             color: var(--accent-color);
             font-weight: bold;
+            display: flex;
+            justify-content: space-between;
         }
 
         .job-listing-desc {
@@ -580,7 +582,7 @@ header {
         align-items: center; justify-content: center;
         .eventSlide1, .eventSlide2, .eventSlide3 {
             display: none;
-            height: 50%;width: 80%;
+            height: 70%;width: 100%;
             overflow: hidden;
             // top: 50%;
             border-radius: 25px;
@@ -597,12 +599,14 @@ header {
         }
         .desc-event {
             position: absolute;
-            top:81%;
+            // top:81%;
             left: 5%;
+            bottom: 5vh;
             #event-title {
                 font-size: x-large;
                 font-weight: bold;
                 margin: 0;
+                text-transform: uppercase;
             }
             .event-info {
                 font-size: x-small;
@@ -622,13 +626,17 @@ header {
         color: white;
         font-weight: bold;
         font-size: 18px;
-        transition: 0.6s ease;
+        transition: 0.3s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        background-color: black;
+        color: #f1f1f1;
+        opacity: .4;
 
         &:hover {
             background-color: #f1f1f1;
             color: black;
+            opacity: .7;
         }
       }
 
@@ -828,11 +836,17 @@ header {
     .event-container {
         .event-slideshow-container{
             .eventSlide1, .eventSlide2, .eventSlide3 {
-                height: 60%; width: 100%;
+                width: 100%;
                 img {
                     height: auto;width: 100%;
-                    margin-top: -25%;
+                    // margin-top: -25%;
+                    transform: unset;
+                    margin: unset;
                 }
+            }
+            .desc-event {
+                color: white;
+                bottom: 25vh;
             }
         }
     }
