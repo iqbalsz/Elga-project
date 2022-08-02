@@ -356,17 +356,20 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    // overflow: hidden;
+                    // height: 100px;
                     .bio-logo {
-                        width: 60%;height: 60%;
+                        height: 50px;width: auto;
+                        padding-block: 20px;
                         &:hover {
-                            width: 70%;height: 70%;
+                            height: 70px;
                             transition: .2s;
                         }   
                     }
                     .elgatama-logo{
-                        width: 40%;height: 40%; 
+                        height: 100px;width: auto; 
                         &:hover {
-                            width: 50%;height: 50%;
+                            height: 120px;
                             transition: .2s;
                         }
                     }
@@ -496,19 +499,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .elgatama-pict {
-        display: inherit;
-        justify-content: center;
-        position: absolute;
-        top: 36%;
-        img {
-            padding: 5px;
-            background: white;
-            // background-size: 50%;
-            border-radius: 100px;
-            width: 10%;
-        }
-    }
     .elgatama-text {
         margin-bottom: 50px;
         padding-inline: 10%;
@@ -525,12 +515,21 @@ header {
             font-weight: bold;
         }   
     }
+    .multisera-map {
+        padding-inline: 10%;
+        img {
+            width: 100%;
+        }
+    }
     #multisera {
         margin-bottom: 0;
     }
     .multisera-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
         img {
-            width: 100%;
+            width: 80%;
         }
    
     }
@@ -541,9 +540,26 @@ header {
     overflow: hidden;
     margin-top: 80px;
     background: white;
+    position: relative;
     .about-banner {
         display: flex;flex-direction: row;
         height: 180px;
+        justify-content: center;
+    }
+    .elgatama-pict {
+        position: absolute;
+        top: 20%;
+        // left: 50%;transform: translateX(-50%);
+        width: 100%;height: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;height: 100%;
+            padding: 5px;
+            background: white;
+            // background-size: 50%;
+            border-radius: 100px;
+        }
     }
 }
 
@@ -564,14 +580,15 @@ header {
         align-items: center; justify-content: center;
         .eventSlide1, .eventSlide2, .eventSlide3 {
             display: none;
-            // height: 100%;
+            height: 50%;width: 80%;
             overflow: hidden;
             // top: 50%;
             border-radius: 25px;
             img {
                 // height: 100px;
                 vertical-align: middle;
-                width: 250%;
+                // width: 250%;
+                height: 100%;
                 margin-inline: auto;
                 margin-left: 50%;
                 transform: translateX(-50%);
@@ -738,17 +755,17 @@ header {
 
         }
     }
-    .about-container {
-        .about-banner {
-            ul {
-                li {
-                    a,img {
-                        width: 50%;height: 30%;
-                    }
-                }
-            }
-        }
-    }
+    // .about-container {
+    //     .about-banner {
+    //         ul {
+    //             li {
+    //                 a,img {
+    //                     height: 30%;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .bot-nav {
         flex-direction: row;
         .map-address-wrapper {
@@ -801,10 +818,25 @@ header {
     }
 
     .about-elgatama {
-        .elgatama-pict {
-            top: 48%;
+        .multisera-group {
+            img {
+                width: 50%;
+            }
         }
     }
+
+    .event-container {
+        .event-slideshow-container{
+            .eventSlide1, .eventSlide2, .eventSlide3 {
+                height: 60%; width: 100%;
+                img {
+                    height: auto;width: 100%;
+                    margin-top: -25%;
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -851,17 +883,17 @@ header {
         height: unset;
     }
     
-    .about-container {
-        .about-banner {
-            ul {
-                li {
-                    a,img {
-                        width: 30%;height: 30%;
-                    }
-                }
-            }
-        }
-    }
+    // .about-container {
+    //     .about-banner {
+    //         ul {
+    //             li {
+    //                 a,img {
+    //                     width: 30%;height: 30%;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     .bot-nav {
         flex-direction: row;
         .map-address-wrapper {

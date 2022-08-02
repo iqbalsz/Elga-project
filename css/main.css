@@ -434,25 +434,24 @@ header label {
 }
 
 .about-container .about-banner ul li a .bio-logo {
-  width: 60%;
-  height: 60%;
+  height: 50px;
+  width: auto;
+  padding-block: 20px;
 }
 
 .about-container .about-banner ul li a .bio-logo:hover {
-  width: 70%;
-  height: 70%;
+  height: 70px;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
 .about-container .about-banner ul li a .elgatama-logo {
-  width: 40%;
-  height: 40%;
+  height: 100px;
+  width: auto;
 }
 
 .about-container .about-banner ul li a .elgatama-logo:hover {
-  width: 50%;
-  height: 50%;
+  height: 120px;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -642,22 +641,6 @@ header label {
           align-items: center;
 }
 
-.about-elgatama .elgatama-pict {
-  display: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 36%;
-}
-
-.about-elgatama .elgatama-pict img {
-  padding: 5px;
-  background: white;
-  border-radius: 100px;
-  width: 10%;
-}
-
 .about-elgatama .elgatama-text {
   margin-bottom: 50px;
   padding-inline: 10%;
@@ -678,18 +661,37 @@ header label {
   font-weight: bold;
 }
 
+.about-elgatama .multisera-map {
+  padding-inline: 10%;
+}
+
+.about-elgatama .multisera-map img {
+  width: 100%;
+}
+
 .about-elgatama #multisera {
   margin-bottom: 0;
 }
 
-.about-elgatama .multisera-group img {
+.about-elgatama .multisera-group {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-elgatama .multisera-group img {
+  width: 80%;
 }
 
 .banner-container {
   overflow: hidden;
   margin-top: 80px;
   background: white;
+  position: relative;
 }
 
 .banner-container .about-banner {
@@ -701,6 +703,30 @@ header label {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 180px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-container .elgatama-pict {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-container .elgatama-pict img {
+  width: auto;
+  height: 100%;
+  padding: 5px;
+  background: white;
+  border-radius: 100px;
 }
 
 .event-container {
@@ -733,13 +759,15 @@ header label {
 
 .event-container .event-slideshow-container .eventSlide1, .event-container .event-slideshow-container .eventSlide2, .event-container .event-slideshow-container .eventSlide3 {
   display: none;
+  height: 50%;
+  width: 80%;
   overflow: hidden;
   border-radius: 25px;
 }
 
 .event-container .event-slideshow-container .eventSlide1 img, .event-container .event-slideshow-container .eventSlide2 img, .event-container .event-slideshow-container .eventSlide3 img {
   vertical-align: middle;
-  width: 250%;
+  height: 100%;
   margin-inline: auto;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
@@ -956,10 +984,6 @@ header label {
     height: 8.6em;
     width: 8.6em;
   }
-  .about-container .about-banner ul li a, .about-container .about-banner ul li img {
-    width: 50%;
-    height: 30%;
-  }
   .bot-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1019,8 +1043,17 @@ header label {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .about-elgatama .elgatama-pict {
-    top: 48%;
+  .about-elgatama .multisera-group img {
+    width: 50%;
+  }
+  .event-container .event-slideshow-container .eventSlide1, .event-container .event-slideshow-container .eventSlide2, .event-container .event-slideshow-container .eventSlide3 {
+    height: 60%;
+    width: 100%;
+  }
+  .event-container .event-slideshow-container .eventSlide1 img, .event-container .event-slideshow-container .eventSlide2 img, .event-container .event-slideshow-container .eventSlide3 img {
+    height: auto;
+    width: 100%;
+    margin-top: -25%;
   }
 }
 
@@ -1058,10 +1091,6 @@ header label {
   }
   #menu-bar:checked ~ .navbar {
     height: unset;
-  }
-  .about-container .about-banner ul li a, .about-container .about-banner ul li img {
-    width: 30%;
-    height: 30%;
   }
   .bot-nav {
     -webkit-box-orient: horizontal;
