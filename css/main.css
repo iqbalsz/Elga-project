@@ -587,6 +587,8 @@ header label {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .help-container .help-link-wrapper .help-link {
@@ -604,6 +606,9 @@ header label {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
 }
 
 .help-container .help-link-wrapper .help-link a {
@@ -630,6 +635,10 @@ header label {
 .help-container .help-link-wrapper .help-link #help-nama {
   font-weight: bold;
   padding-top: 5px;
+}
+
+.help-container .help-link-wrapper .help-link #help-department {
+  padding-bottom: 10px;
 }
 
 .about-elgatama {
@@ -1015,6 +1024,10 @@ header label {
   }
   .help-container .help-text {
     text-align: center;
+  }
+  .help-container .help-link-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .help-container .help-link-wrapper .help-link a img {
     width: 50%;

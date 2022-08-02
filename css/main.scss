@@ -468,12 +468,14 @@ header {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         .help-link {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 0;
+            flex: 0 1 30%;
             a {             //create a new wrapper for this so it wont be as big
                 display: flex;
                 justify-content: center;
@@ -491,6 +493,10 @@ header {
                 font-weight: bold;
                 padding-top: 5px;
             }
+            #help-department {
+                padding-bottom: 10px;
+            }
+            
         }
     }
 }
@@ -796,6 +802,7 @@ header {
        
         }
         .help-link-wrapper {
+            flex-wrap: nowrap;
             .help-link {     
                 a {             //create a new wrapper for this so it wont be as big
                     img {
