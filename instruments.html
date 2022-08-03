@@ -48,14 +48,16 @@
     <!-- content here -->
     <div class="instruments-content-container">
         <div class="instruments-main-containers">
+            <input type="checkbox" id="readMore" style="display: none;">
+            <input type="checkbox" id="readLess" style="display: none;">
 
             <div class="instruments-main-content" id="main-content">
-                <p id="seri-product">Nama produk</p>
+                <p id="seri-product">BA 400</p>
                 <div class="instruments-content">
                     <img src="image/instruments.png" alt="">
                     <div class="instruments-desc">
-                        <input type="checkbox" id="readMore" style="display: none;">
-                        <input type="checkbox" id="readLess" style="display: none;">
+                        <!-- <input type="checkbox" id="readMore" style="display: none;">
+                        <input type="checkbox" id="readLess" style="display: none;"> -->
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque minus ad sequi obcaecati corrupti autem enim, quisquam eos dolore repellat? 
                             <label for="readMore"><span id="readMoreButt">Read more...</span></label><span id="hiddenContent">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas aspernatur atque temporibus culpa earum autem adipisci, deserunt aperiam quibusdam minus similique officiis itaque illo voluptatem! Corrupti, reiciendis! Iure nobis repellat reprehenderit quae blanditiis hic quibusdam labore ab dicta quisquam ipsam rerum culpa aspernatur amet deserunt eaque ipsa, consequuntur et beatae officiis commodi explicabo facilis soluta. Esse dolores reprehenderit, necessitatibus repellendus pariatur unde voluptas fugit explicabo omnis numquam, porro iusto ducimus error suscipit inventore, minima deleniti eligendi quae. Architecto, quis.
@@ -66,12 +68,12 @@
             </div>
 
             <div class="instruments-main-content" id="main-content">
-                <p id="seri-product">Walakon</p>
+                <p id="seri-product">BBABABA</p>
                 <div class="instruments-content">
-                    <img src="image/instruments.png" alt="">
+                    <img src="image/logo.png" alt="">
                     <div class="instruments-desc">
-                        <input type="checkbox" id="readMore" style="display: none;">
-                        <input type="checkbox" id="readLess" style="display: none;">
+                        <!-- <input type="checkbox" id="readMore" style="display: none;">
+                        <input type="checkbox" id="readLess" style="display: none;"> -->
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque minus ad sequi obcaecati corrupti autem enim, quisquam eos dolore repellat? 
                             <label for="readMore"><span id="readMoreButt">Read more...</span></label><span id="hiddenContent">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas aspernatur atque temporibus culpa earum autem adipisci, deserunt aperiam quibusdam minus similique officiis itaque illo voluptatem! Corrupti, reiciendis! Iure nobis repellat reprehenderit quae blanditiis hic quibusdam labore ab dicta quisquam ipsam rerum culpa aspernatur amet deserunt eaque ipsa, consequuntur et beatae officiis commodi explicabo facilis soluta. Esse dolores reprehenderit, necessitatibus repellendus pariatur unde voluptas fugit explicabo omnis numquam, porro iusto ducimus error suscipit inventore, minima deleniti eligendi quae. Architecto, quis.
@@ -81,8 +83,13 @@
                 <a href="#" class="download-brochure">Download Brochure</a>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" for="readLess" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" for="readLess" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container" style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)">BAA</span>
+            <span class="dot" onclick="currentSlide(2)">WAW</span>
         </div>
         
     </div>
@@ -137,17 +144,17 @@
     function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("instruments-main-content");
-    // let dots = document.getElementsByClassName("dot");
+    let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
-    // for (i = 0; i < dots.length; i++) {
-    //     dots[i].className = dots[i].className.replace(" active", "");
-    // }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
     slides[slideIndex-1].style.display = "flex";  
-    // dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active";
     }
     
     

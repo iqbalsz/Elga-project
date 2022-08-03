@@ -754,6 +754,19 @@ header {
     display: flex;
     justify-content: center; align-items: center;
     height: 100vh;
+    flex-direction: column;
+    .dot-container {
+        margin-top: 20px;
+        .dot.active{
+            background-color: orange;color: white;
+        }
+    }
+    div > .dot {
+        padding: 5px;border-radius: 6px;
+        background-color: white;
+        margin-top: 10px;
+        
+    }
     .instruments-main-containers {
         display: flex; flex-direction: column;
         justify-content: center; align-items: center;
@@ -767,6 +780,16 @@ header {
         overflow: hidden;
         border-inline: solid #333;
         // margin-inline: 20%;
+        input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
+            display: block;
+            overflow: scroll;
+        }
+        input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > label{
+            display: none;
+        }
+        input#readLess:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
+            display: none;
+        }
         #main-content {
             display: none;
         }
@@ -799,16 +822,16 @@ header {
                             color: red;
                         }
                     }
-                    input#readMore:checked ~ p > #hiddenContent {
-                        display: block;
-                        overflow: scroll;
-                    }
-                    input#readMore:checked ~ p > label{
-                        display: none;
-                    }
-                    input#readLess:checked ~ p > #hiddenContent {
-                        display: none;
-                    }
+                    // input#readMore:checked ~ p > #hiddenContent {
+                    //     display: block;
+                    //     overflow: scroll;
+                    // }
+                    // input#readMore:checked ~ p > label{
+                    //     display: none;
+                    // }
+                    // input#readLess:checked ~ p > #hiddenContent {
+                    //     display: none;
+                    // }
                 }
             }
     
@@ -848,6 +871,7 @@ header {
             &:hover {
                 background-color: #333;
                 color: white;
+                transition: .2s;
             }
         } 
         .next {
@@ -855,6 +879,7 @@ header {
             &:hover {
                 background-color: #333;
                 color: white;
+                transition: .2s;
             }
         }
 

@@ -990,6 +990,26 @@ header label {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.instruments-content-container .dot-container {
+  margin-top: 20px;
+}
+
+.instruments-content-container .dot-container .dot.active {
+  background-color: orange;
+  color: white;
+}
+
+.instruments-content-container div > .dot {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 .instruments-content-container .instruments-main-containers {
@@ -1015,6 +1035,19 @@ header label {
   height: 50%;
   overflow: hidden;
   border-inline: solid #333;
+}
+
+.instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
+  display: block;
+  overflow: scroll;
+}
+
+.instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > label {
+  display: none;
+}
+
+.instruments-content-container .instruments-main-containers input#readLess:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
+  display: none;
 }
 
 .instruments-content-container .instruments-main-containers #main-content {
@@ -1074,19 +1107,6 @@ header label {
   color: red;
 }
 
-.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readMore:checked ~ p > #hiddenContent {
-  display: block;
-  overflow: scroll;
-}
-
-.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readMore:checked ~ p > label {
-  display: none;
-}
-
-.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readLess:checked ~ p > #hiddenContent {
-  display: none;
-}
-
 .instruments-content-container .instruments-main-containers .instruments-main-content #seri-product, .instruments-content-container .instruments-main-containers .instruments-main-content .download-brochure {
   position: absolute;
   color: white;
@@ -1128,6 +1148,8 @@ header label {
 .instruments-content-container .instruments-main-containers .prev:hover {
   background-color: #333;
   color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .instruments-content-container .instruments-main-containers .next {
@@ -1137,6 +1159,8 @@ header label {
 .instruments-content-container .instruments-main-containers .next:hover {
   background-color: #333;
   color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 @media only screen and (min-width: 680px) {
