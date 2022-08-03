@@ -106,19 +106,19 @@
     // Link image animation
     
     function inmouseOver() {
-        document.getElementsByClassName("ins-img")[0].style = "height: 400px; transition: .2s;";
+        document.getElementsByClassName("ins-img")[0].style = "height: calc(var(--product-height) + 100px); transition: .2s;";
     }
 
     function inmouseOut() {
-        document.getElementsByClassName("ins-img")[0].style = "height: 300px; transition: .2s;";
+        document.getElementsByClassName("ins-img")[0].style = "height: var(--product-height); transition: .2s;";
     }
 
     function remouseOver() {
-        document.getElementsByClassName("re-img")[0].style = "height: 400px; transition: .2s;";
+        document.getElementsByClassName("re-img")[0].style = "height: calc(var(--product-height) + 100px); transition: .2s;";
     }
 
     function remouseOut() {
-        document.getElementsByClassName("re-img")[0].style = "height: 300px; transition: .2s;";
+        document.getElementsByClassName("re-img")[0].style = "height: var(--product-height); transition: .2s;";
     }
 </script>
     

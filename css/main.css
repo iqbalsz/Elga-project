@@ -440,7 +440,7 @@ header label {
 }
 
 .about-container .about-banner ul li a .bio-logo:hover {
-  height: 60px;
+  height: 55px;
   -webkit-transition: .2s;
   transition: .2s;
 }
@@ -464,8 +464,16 @@ header label {
 
 .job-listing-head {
   margin-top: 80px;
-  margin-left: 20px;
-  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1ex;
+  color: black;
+  opacity: .8;
+  text-transform: uppercase;
 }
 
 .job-listing_container {
@@ -476,6 +484,7 @@ header label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 15vh;
 }
 
 .job-listing_container .sub-job-listing_container {
@@ -502,6 +511,15 @@ header label {
 
 .job-listing_container .sub-job-listing_container ul li {
   margin: 0 1.5em 0 1.5em;
+}
+
+.job-listing_container .sub-job-listing_container ul li a {
+  text-decoration: none;
+  padding: 2px;
+  background: var(--accent-color);
+  color: white;
+  border-radius: 5px;
+  overflow: auto;
 }
 
 .job-listing_container .sub-job-listing_container .job-listing-department {
@@ -903,6 +921,7 @@ header label {
   font-family: sans-serif;
   font-weight: bold;
   margin-block: 10px;
+  letter-spacing: 2px;
 }
 
 .product-index-text .product-mid p {
@@ -929,6 +948,7 @@ header label {
 }
 
 .product-index-container .instrument-bg, .product-index-container .reagents-bg {
+  --product-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,7 +962,7 @@ header label {
 
 .product-index-container .instrument-bg img, .product-index-container .reagents-bg img {
   width: auto;
-  height: 300px;
+  height: var(--product-height);
 }
 
 .product-index-container .instrument-bg {
@@ -957,6 +977,166 @@ header label {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.instruments-content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.instruments-content-container .instruments-main-containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  padding-inline: 20px;
+  position: relative;
+  width: 70%;
+  height: 50%;
+  overflow: hidden;
+  border-inline: solid #333;
+}
+
+.instruments-content-container .instruments-main-containers #main-content {
+  display: none;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-small;
+  overflow: hidden;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content img {
+  height: auto;
+  width: 200px;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc {
+  overflow: scroll;
+  height: 40%;
+  scrollbar-color: red rgba(51, 51, 51, 0.2);
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc p #hiddenContent {
+  display: none;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc p label {
+  color: red;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readMore:checked ~ p > #hiddenContent {
+  display: block;
+  overflow: scroll;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readMore:checked ~ p > label {
+  display: none;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc input#readLess:checked ~ p > #hiddenContent {
+  display: none;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content #seri-product, .instruments-content-container .instruments-main-containers .instruments-main-content .download-brochure {
+  position: absolute;
+  color: white;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content #seri-product {
+  padding: 10px;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+  top: 0;
+  margin: 0;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .download-brochure {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px 5px 0 0;
+  bottom: 0;
+}
+
+.instruments-content-container .instruments-main-containers .prev, .instruments-content-container .instruments-main-containers .next {
+  position: absolute;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.instruments-content-container .instruments-main-containers .prev {
+  left: 0;
+}
+
+.instruments-content-container .instruments-main-containers .prev:hover {
+  background-color: #333;
+  color: white;
+}
+
+.instruments-content-container .instruments-main-containers .next {
+  right: 0;
+}
+
+.instruments-content-container .instruments-main-containers .next:hover {
+  background-color: #333;
+  color: white;
 }
 
 @media only screen and (min-width: 680px) {
@@ -1083,6 +1263,29 @@ header label {
   .event-container .event-slideshow-container .desc-event {
     color: white;
     bottom: 25vh;
+  }
+  .job-listing_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+  }
+  .job-listing_container .sub-job-listing_container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+  }
+  .product-index-container .instrument-bg, .product-index-container .reagents-bg {
+    --product-height: 400px;
+  }
+  .product-index-container .instrument-bg img, .product-index-container .reagents-bg img {
+    height: var(--product-height);
   }
 }
 

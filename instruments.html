@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elga Tama</title>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/image/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+
+    <header class="nav-container">
+        <a href=""><img class="nav-logo" src="image/logo.png" alt=""></a>
+
+        <input type="checkbox" id="menu-bar" onchange="navChange">
+        <label for="menu-bar"><img class="menu-bar-img" src="image/menu.png" alt=""></label>
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Product +</a>
+                    <ul>
+                        <li><a href="#" class="active">Instruments</a></li>
+                        <li><a href="#">Reagants</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="about us.html">About Us +</a>
+                    <ul>
+                        <li><a href="#">Biosystems</a></li>
+                        <li><a href="multisera.html">Multisera Group</a></li>
+                        <li><a href="elgatama.html">Elga Tama</a></li>
+                    </ul>
+                </li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- content here -->
+    <div class="instruments-content-container">
+        <div class="instruments-main-containers">
+
+            <div class="instruments-main-content" id="main-content">
+                <p id="seri-product">Nama produk</p>
+                <div class="instruments-content">
+                    <img src="image/instruments.png" alt="">
+                    <div class="instruments-desc">
+                        <input type="checkbox" id="readMore" style="display: none;">
+                        <input type="checkbox" id="readLess" style="display: none;">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque minus ad sequi obcaecati corrupti autem enim, quisquam eos dolore repellat? 
+                            <label for="readMore"><span id="readMoreButt">Read more...</span></label><span id="hiddenContent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas aspernatur atque temporibus culpa earum autem adipisci, deserunt aperiam quibusdam minus similique officiis itaque illo voluptatem! Corrupti, reiciendis! Iure nobis repellat reprehenderit quae blanditiis hic quibusdam labore ab dicta quisquam ipsam rerum culpa aspernatur amet deserunt eaque ipsa, consequuntur et beatae officiis commodi explicabo facilis soluta. Esse dolores reprehenderit, necessitatibus repellendus pariatur unde voluptas fugit explicabo omnis numquam, porro iusto ducimus error suscipit inventore, minima deleniti eligendi quae. Architecto, quis.
+                                <label for="readMore"><span id="readMoreButt">Read less...</span></label></span></p>    
+                    </div>         
+                </div>
+                <a href="#" class="download-brochure">Download Brochure</a>
+            </div>
+
+            <div class="instruments-main-content" id="main-content">
+                <p id="seri-product">Walakon</p>
+                <div class="instruments-content">
+                    <img src="image/instruments.png" alt="">
+                    <div class="instruments-desc">
+                        <input type="checkbox" id="readMore" style="display: none;">
+                        <input type="checkbox" id="readLess" style="display: none;">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque minus ad sequi obcaecati corrupti autem enim, quisquam eos dolore repellat? 
+                            <label for="readMore"><span id="readMoreButt">Read more...</span></label><span id="hiddenContent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptas aspernatur atque temporibus culpa earum autem adipisci, deserunt aperiam quibusdam minus similique officiis itaque illo voluptatem! Corrupti, reiciendis! Iure nobis repellat reprehenderit quae blanditiis hic quibusdam labore ab dicta quisquam ipsam rerum culpa aspernatur amet deserunt eaque ipsa, consequuntur et beatae officiis commodi explicabo facilis soluta. Esse dolores reprehenderit, necessitatibus repellendus pariatur unde voluptas fugit explicabo omnis numquam, porro iusto ducimus error suscipit inventore, minima deleniti eligendi quae. Architecto, quis.
+                                <label for="readMore"><span id="readMoreButt">Read less...</span></label></span></p>    
+                    </div>         
+                </div>
+                <a href="#" class="download-brochure">Download Brochure</a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+    </div>
+    
+
+
+
+    <nav class="bot-nav">
+        <div class="bot-wrapper">
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-twitter-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-youtube-square"></i>
+            </a>
+            <a href="#" class="bot-nav__link">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+    </nav>
+
+
+<script>
+    document.getElementById("menu-bar").onchange = function() {navChange()};
+
+    function navChange(){
+        if ( $('#menu-bar').is(":checked")) {
+        document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
+        } else {
+            document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
+        }
+    }
+
+    // slide JS
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("instruments-main-content");
+    // let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    // for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    // }
+    slides[slideIndex-1].style.display = "flex";  
+    // dots[slideIndex-1].className += " active";
+    }
+    
+    
+</script>
+    
+</body>
+</html>
