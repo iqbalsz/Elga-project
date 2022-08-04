@@ -123,16 +123,62 @@ header label {
   position: fixed;
   bottom: 0;
   margin-bottom: 60px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   justify-items: center;
+}
+
+.button-nav div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.button-nav div .menu__item {
+  position: absolute;
+  bottom: 0;
+}
+
+.button-nav div .help {
+  left: 50%;
+  bottom: 5vh;
+}
+
+.button-nav div .help img {
+  width: auto;
+  height: 60px;
+}
+
+.button-nav div .aboutus {
+  bottom: 30vh;
+  left: -40%;
+}
+
+.button-nav div .product {
+  bottom: 10vh;
+  left: -40%;
+}
+
+.button-nav div .product img {
+  width: auto;
+  height: 130px;
+}
+
+.button-nav div .careers {
+  left: -90%;
+  bottom: 40vh;
+}
+
+.button-nav div .careers img {
+  width: auto;
+  height: 60px;
+}
+
+.button-nav div .events {
+  bottom: 30vh;
+  left: -80%;
 }
 
 .button-nav .menu__item img {
@@ -863,6 +909,35 @@ header label {
   opacity: .7;
 }
 
+.event-container .down, .event-container .up {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding-inline: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 3px 3px 3px 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: black;
+  color: #f1f1f1;
+  opacity: .2;
+  text-decoration: none;
+}
+
+.event-container .down:hover, .event-container .up:hover {
+  background-color: #f1f1f1;
+  color: black;
+  opacity: .7;
+}
+
 .event-container .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -870,6 +945,14 @@ header label {
 
 .event-container .prev {
   left: 0;
+}
+
+.event-container .down {
+  top: 85%;
+}
+
+.event-container .up {
+  top: 18%;
 }
 
 .product-index-text {
@@ -1171,7 +1254,6 @@ header label {
 @media only screen and (min-width: 680px) {
   .button-nav {
     position: fixed;
-    top: 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1183,8 +1265,27 @@ header label {
             justify-content: center;
     height: 100vh;
   }
+  .button-nav div {
+    height: 0;
+  }
+  .button-nav div .menu__item {
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-nav div .menu__item img {
+    width: auto;
+    height: 120px;
+  }
   .button-nav .menu__item {
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .button-nav .menu__item:before {
     content: attr(data-hover);

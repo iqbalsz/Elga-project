@@ -46,7 +46,7 @@
     </header>
     <!-- content here -->
     <div class="event-container">
-        <div class="event-slideshow-container">
+        <div id="eventSlide1" class="event-slideshow-container">
             <div class="eventSlide1">
                 <img src="image/aboutUs-1.JPG" alt="">
             </div>
@@ -59,6 +59,7 @@
 
             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a href="#eventSlide2" class="down">&#65086;</a>
             <div class="desc-event">
                 <p id="event-title">Perayaan Hari Kartini</p>
                 <div class="event-info">
@@ -69,22 +70,24 @@
         </div>
     
     
-        <div class="event-slideshow-container">
-            <div id="slide-container" class="eventSlide2">
+        <div id="eventSlide2" class="event-slideshow-container">
+            <div class="eventSlide2">
                 <img src="image/aboutUs-3.JPG" alt="">
             </div>
-            <div id="slide-container" class="eventSlide2">
+            <div class="eventSlide2">
                 <img src="image/bg4.jpg" alt="">
             </div>
-            <div id="slide-container" class="eventSlide2">
+            <div class="eventSlide2">
                 <img src="image/aboutUs-1.JPG" alt="">
             </div>
-            <div id="slide-container" class="eventSlide2">
+            <div class="eventSlide2">
                 <img src="image/bg10.jpg" alt="">
             </div>
     
             <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            <a href="#eventSlide3" class="down">&#65086;</a>
+            <a href="#eventSlide1" class="up">&#65085;</a>
             <div class="desc-event">
                 <p id="event-title">Perayaan Hari Kartini</p>
                 <div class="event-info">
@@ -94,7 +97,7 @@
             </div>
         </div>
 
-        <div class="event-slideshow-container">
+        <div id="eventSlide3" class="event-slideshow-container">
             <div class="eventSlide3">
                 <img src="image/nationalmeeting1.jpg" alt="">
             </div>
@@ -119,6 +122,7 @@
     
             <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            <a href="#eventSlide2" class="up">&#65085;</a>
             <div class="desc-event">
                 <p id="event-title">National Meeting</p>
                 <div class="event-info">

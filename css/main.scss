@@ -121,14 +121,60 @@ header {
     // top: 70%;
     bottom: 0;
     margin-bottom: 60px;
-    display: grid;
+    // display: grid;
+    display: flex;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // grid-column-gap: 0px;
+    // grid-row-gap: 0px;
     justify-items: center;
     
+    div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .menu__item {
+            position: absolute;
+            bottom: 0;
+        }
+        .help {
+            left: 50%;
+            bottom: 5vh;
+
+            img {
+                width: auto;
+                height: 60px;
+            }
+        }
+        .aboutus {
+            bottom: 30vh;
+            left: -40%;
+        }
+        .product {
+            bottom: 10vh;
+            left: -40%;
+            img {
+                width: auto;
+                height: 130px;
+            }
+        }
+        .careers {
+            left: -90%;
+            bottom: 40vh;
+            
+            img {
+                width: auto;
+                height: 60px;
+            }
+        }
+        .events {
+            bottom: 30vh;
+            left: -80%;
+        }
+    }
+    
+
     .menu__item {
         img{
             width: 90px;height: 90px;
@@ -137,6 +183,8 @@ header {
             top: 70%;
         }
     }
+
+
     // .help_item {
     //     margin-left: 40%;
     //     transform: translateY(100%);
@@ -666,12 +714,44 @@ header {
         }
       }
 
+      .down,.up {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding-inline: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.3s ease;
+        border-radius: 3px 3px 3px 3px;
+        user-select: none;
+        background-color: black;
+        color: #f1f1f1;
+        opacity: .2;
+        text-decoration: none;
+
+
+        &:hover {
+            background-color: #f1f1f1;
+            color: black;
+            opacity: .7;
+        }
+      }
+
     .next {
     right: 0;
     border-radius: 3px 0 0 3px;
     }
     .prev {
     left: 0;
+    }
+    .down {
+    top: 85%;
+    }
+    .up {
+    top: 18%
     }
       
 }
@@ -895,13 +975,25 @@ header {
 @media only screen and (min-width: 680px) {
     .button-nav {
         position: fixed;
-        top: 0%;
+        // top: 0%;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
+        div {
+            height: 0;
+            .menu__item {
+                position: static;
+                align-items: center; justify-content: center;
+                img{
+                    width: auto;
+                    height: 120px;
+                }
+            }
+        }
         .menu__item {
             margin: auto;
+            display: flex;
             &:before {
                 content: attr(data-hover);
                 opacity: 0;
