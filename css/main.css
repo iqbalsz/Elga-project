@@ -1147,9 +1147,6 @@ header label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1176,15 +1173,20 @@ header label {
   overflow: hidden;
 }
 
-.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content img {
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-img {
+  overflow: hidden;
+  height: 50%;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-img img {
   height: auto;
-  width: 200px;
+  width: 70%;
 }
 
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc {
   overflow: scroll;
-  height: 40%;
-  scrollbar-color: red rgba(51, 51, 51, 0.2);
+  height: 50%;
+  margin-bottom: 20px;
 }
 
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc p #hiddenContent {
