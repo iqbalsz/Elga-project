@@ -855,12 +855,15 @@ video {
         cursor: pointer;
         display: flex;
         height: 5.5%;
-        overflow: hidden;
+        
         width: 100%;
         justify-content: center;align-items: center;
         gap: 2px;
         .dot.active{
             background-color: #e9530d;color: white;
+        }
+        span {
+            overflow: hidden;
         }
     }
     div > .dot {
@@ -878,7 +881,7 @@ video {
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         // padding-inline: 20px;
         position: relative;
-        width: 70%;
+        width: 85%;
         height: 70%;
         overflow: hidden;
         border-inline: solid #333;
@@ -924,13 +927,13 @@ video {
                 font-size: x-small;
                 overflow: hidden;
                 flex: 1 1 40%;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 width: 100%;
                 .instruments-img {
                     overflow: hidden;
                     height: 50%;
                     img {
-                        height: auto;width: 70%;
+                        height: auto;width: 100%;
                         position: absolute;
                         z-index: 0;
                         left: 0;
@@ -954,6 +957,9 @@ video {
                         padding-left: 25px;
                         // text-align: center;
                         // transform: rotate(-5deg);
+                    }
+                    label {
+                        margin-inline: 20px;
                     }
                     p {
                         margin-inline: 20px;
@@ -1202,6 +1208,7 @@ video {
 
     .instruments-main-containers {
         height: 50% !important;
+        width: 60% !important;
         .instruments-main-content {
             .instruments-content {
                 flex-direction: row !important;
@@ -1210,6 +1217,8 @@ video {
                     align-items: center; justify-content: center;
                     overflow: unset !important;
                     img {
+                        width: auto !important;
+                        height: 180% !important;
                         position: unset !important; 
                         max-width: 366px;
                     }

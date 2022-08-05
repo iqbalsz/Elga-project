@@ -1104,7 +1104,6 @@ video {
   display: -ms-flexbox;
   display: flex;
   height: 5.5%;
-  overflow: hidden;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1118,6 +1117,10 @@ video {
 .instruments-content-container .dot-container .dot.active {
   background-color: #e9530d;
   color: white;
+}
+
+.instruments-content-container .dot-container span {
+  overflow: hidden;
 }
 
 .instruments-content-container div > .dot {
@@ -1147,7 +1150,7 @@ video {
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   position: relative;
-  width: 70%;
+  width: 85%;
   height: 70%;
   overflow: hidden;
   border-inline: solid #333;
@@ -1227,7 +1230,7 @@ video {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40%;
           flex: 1 1 40%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -1238,7 +1241,7 @@ video {
 
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-img img {
   height: auto;
-  width: 70%;
+  width: 100%;
   position: absolute;
   z-index: 0;
   left: 0;
@@ -1262,6 +1265,10 @@ video {
   margin: 0;
   padding-block: 10px;
   padding-left: 25px;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc label {
+  margin-inline: 20px;
 }
 
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc p {
@@ -1516,6 +1523,7 @@ video {
   }
   .instruments-main-containers {
     height: 50% !important;
+    width: 60% !important;
   }
   .instruments-main-containers .instruments-main-content .instruments-content {
     -webkit-box-orient: horizontal !important;
@@ -1536,6 +1544,8 @@ video {
     overflow: unset !important;
   }
   .instruments-main-containers .instruments-main-content .instruments-content .instruments-img img {
+    width: auto !important;
+    height: 180% !important;
     position: unset !important;
     max-width: 366px;
   }
