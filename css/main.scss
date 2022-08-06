@@ -306,6 +306,12 @@ header {
     }
 }
 
+.splide__slide { 
+    img {
+        width: auto;
+        height: 400px;
+        object-fit: cover;}
+  }
 
 .bg-slider {
     background-image: url(../image/bg.jpg), url(../image/bg1.jpg), url(../image/bg2.jpg), url(../image/bg3.jpg),
@@ -471,7 +477,7 @@ video {
             margin: 0;
             padding: 0.3em 0 0 0;
             li {
-              margin: 0 1.5em 0 1.5em;
+              margin: 0 .5em 0 1.5em;
               a {
                 text-decoration: none;
                 padding: 2px;
@@ -482,6 +488,9 @@ video {
               }
             }
           }
+        .new-job {
+            display: none;
+        }
 
         .job-listing-department {
             font-size: small;
@@ -509,6 +518,17 @@ video {
         .job-listing-info {
             font-size: smaller;
             opacity: 0.5;
+        }
+    }
+    .sub-job-listing_container.new {
+        border-left: solid var(--accent-color);
+
+        .new-job {
+            display: block;
+            font-size: xx-small;
+            padding-inline: 1px;padding-top: 3px; 
+            background-color: red; border-radius: 6px; color: white;
+            margin: 0;
         }
     }
 }

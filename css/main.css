@@ -301,6 +301,13 @@ header label {
   margin: 0;
 }
 
+.splide__slide img {
+  width: auto;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .bg-slider {
   background-image: url(../image/bg.jpg), url(../image/bg1.jpg), url(../image/bg2.jpg), url(../image/bg3.jpg), url(../image/bg4.jpg), url(../image/bg5.jpg), url(../image/bg6.jpg), url(../image/bg7.jpg), url(../image/bg8.jpg), url(../image/bg9.jpg), url(../image/bg10.jpg), url(../image/bg11.jpg), url(../image/bg12.jpg), url(../image/bg13.jpg);
   background-size: cover;
@@ -567,7 +574,7 @@ video {
 }
 
 .job-listing_container .sub-job-listing_container ul li {
-  margin: 0 1.5em 0 1.5em;
+  margin: 0 .5em 0 1.5em;
 }
 
 .job-listing_container .sub-job-listing_container ul li a {
@@ -577,6 +584,10 @@ video {
   color: white;
   border-radius: 5px;
   overflow: auto;
+}
+
+.job-listing_container .sub-job-listing_container .new-job {
+  display: none;
 }
 
 .job-listing_container .sub-job-listing_container .job-listing-department {
@@ -612,6 +623,21 @@ video {
 .job-listing_container .sub-job-listing_container .job-listing-info {
   font-size: smaller;
   opacity: 0.5;
+}
+
+.job-listing_container .sub-job-listing_container.new {
+  border-left: solid var(--accent-color);
+}
+
+.job-listing_container .sub-job-listing_container.new .new-job {
+  display: block;
+  font-size: xx-small;
+  padding-inline: 1px;
+  padding-top: 3px;
+  background-color: red;
+  border-radius: 6px;
+  color: white;
+  margin: 0;
 }
 
 .help-container {
