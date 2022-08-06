@@ -8,10 +8,13 @@
 
     <!-- custom css file -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/image/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="jquery.backstretch.min.js"></script>
+    <!-- <link rel='stylesheet' id='fontawesome-css' href='https://use.fontawesome.com/releases/v5.0.1/css/all.css?ver=4.9.1' type='text/css' media='all' />  -->
 </head>
 <body>
 
@@ -24,7 +27,7 @@
         <div class="navbar">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
-                <li><a href="">Product +</a>
+                <li><a href="#">Product +</a>
                     <ul>
                         <li><a href="instruments.html">Instruments</a></li>
                         <li><a href="#">Reagants</a></li>
@@ -50,9 +53,6 @@
         <div class="bg-images">
         </div>
     </div> -->
-    <video autoplay muted loop>
-        <source src="image/background.mp4" type="video/mp4">
-    </video>
 
     <div class="button-nav">
         <div class="help_item">
@@ -78,8 +78,11 @@
             <a href="https://id-id.facebook.com/elgatamajkt" target="_blank" class="bot-nav__link">
                 <i class="fa fa-facebook-square"></i>
             </a>
-            <a href="#" class="bot-nav__link">
-                <i class="fa fa-twitter-square"></i>
+            <a href="#" class="bot-nav__link" target="_blank">
+                <i class="fa fa-line"></i>
+            </a>
+            <a href="#" class="bot-nav__link" target="_blank">
+                <i class="fa fa-tiktok"></i>
             </a>
             <a href="https://www.linkedin.com/company/elgatama/" target="_blank" class="bot-nav__link">
                 <i class="fa fa-linkedin-square"></i>
@@ -95,18 +98,16 @@
 
 
 <script>
-    // var $cb = $('#menu-bar').is(':checked')
+    $.backstretch([
+    "image/bg.jpg",
+    "image/bg1.jpg",
+    "image/bg2.jpg",
+    "image/bg3.jpg",
+    "image/bg4.jpg",
+    "image/bg5.jpg"
+    ], {duration: 5000, transition: 'push_right', transitionDuration: 450});
 
-    // if ($cb) {
-    //     alert('checked');
-    // };
-    // if ($('#menu-bar').is(':checked')){
-    //     document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
-    //     alert('checked');
-    // }
-    // if (cb.checked == true){
-    //     document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 0 0";
-    // }
+
     document.getElementById("menu-bar").onchange = function() {navChange()};
 
     function navChange(){

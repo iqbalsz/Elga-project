@@ -235,7 +235,7 @@ header label {
 
 .bot-nav .fa {
   color: white;
-  padding: 15px 1.3em;
+  padding: 15px 1em;
   font-size: 20px;
 }
 
@@ -633,7 +633,15 @@ video {
 }
 
 .help-container .help-text {
+  position: absolute;
   text-align: center;
+  top: 0;
+  background-color: #333;
+  color: white;
+  border-radius: 0 0 25px 25px;
+  padding-top: 12vh;
+  padding-bottom: 2vh;
+  width: 100%;
 }
 
 .help-container .help-text h1 {
@@ -874,7 +882,7 @@ video {
   left: 12%;
   bottom: 73vh;
   color: white;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
 .event-container .event-slideshow-container .desc-event #event-title {
@@ -1158,7 +1166,6 @@ video {
 
 .instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
   display: block;
-  overflow: scroll;
 }
 
 .instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent li {
@@ -1167,7 +1174,6 @@ video {
 
 .instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > span {
   display: block;
-  overflow: scroll;
 }
 
 .instruments-content-container .instruments-main-containers input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > span li {
@@ -1248,7 +1254,7 @@ video {
 }
 
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc {
-  overflow: scroll;
+  overflow: auto;
   height: 50%;
   background-color: white;
   z-index: 2;
@@ -1318,7 +1324,6 @@ video {
 
 .instruments-content-container .instruments-main-containers .prev, .instruments-content-container .instruments-main-containers .next {
   position: absolute;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1327,6 +1332,7 @@ video {
           align-items: center;
   cursor: pointer;
   z-index: 5;
+  font-size: 2em;
 }
 
 .instruments-content-container .instruments-main-containers .prev {
@@ -1338,6 +1344,7 @@ video {
   color: white;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: .5;
 }
 
 .instruments-content-container .instruments-main-containers .next {
@@ -1349,6 +1356,7 @@ video {
   color: white;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: .5;
 }
 
 @media only screen and (min-width: 680px) {
@@ -1397,11 +1405,12 @@ video {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    color: white;
+    color: #e9530d;
     font-weight: bold;
     text-decoration: none;
     width: 8.6em;
     height: 10.5em;
+    text-shadow: 1px 1px 2px black;
     position: absolute;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -1530,6 +1539,7 @@ video {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
+    margin-bottom: 0 !important;
   }
   .instruments-main-containers .instruments-main-content .instruments-content .instruments-img {
     display: -webkit-box;

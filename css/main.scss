@@ -259,7 +259,7 @@ header {
   
     .fa {
       color: white;
-      padding: 15px 1.3em;
+      padding: 15px 1em;
       font-size: 20px;
       
       &:hover {
@@ -522,7 +522,16 @@ video {
     text-transform: uppercase;
 
     .help-text {
+        position: absolute;
         text-align: center;
+        top: 0;
+        background-color: #333;
+        color: white;
+        border-radius: 0 0 25px 25px;
+        padding-top: 12vh; padding-bottom: 2vh;
+        width: 100%;
+
+
         h1{
             font-size: 130%;
             font-weight: unset;
@@ -686,7 +695,7 @@ video {
             left: 12%;
             bottom: 73vh;
             color: white;
-            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
             #event-title {
                 font-size: x-large;
                 font-weight: bold;
@@ -888,12 +897,12 @@ video {
         // margin-inline: 20%;
         input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > #hiddenContent {
             display: block;
-            overflow: scroll;
+            // overflow: scroll;
             li {list-style:circle;}
         }
         input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > span {
             display: block;
-            overflow: scroll;
+            // overflow: scroll;
             li {list-style:circle;}
         }
         input#readMore:checked ~ .instruments-main-content > .instruments-content > .instruments-desc > p > label{
@@ -940,7 +949,7 @@ video {
                     }
                 }
                 .instruments-desc {
-                    overflow: scroll;
+                    overflow: auto;
                     height: 50%;
                     background-color: white;
                     z-index: 2;
@@ -1016,12 +1025,14 @@ video {
         }
         .prev,.next {
             position: absolute;
-            height: 100%;
+            // height: 100%;
             display: flex;
             align-items: center;
             cursor: pointer;
             // padding: 2px;
             z-index: 5;
+            font-size: 2em;
+            
             
         } 
         .prev {
@@ -1030,6 +1041,7 @@ video {
                 background-color: #333;
                 color: white;
                 transition: .2s;
+                opacity: .5;
             }
         } 
         .next {
@@ -1038,6 +1050,7 @@ video {
                 background-color: #333;
                 color: white;
                 transition: .2s;
+                opacity: .5;
             }
         }
 
@@ -1076,11 +1089,12 @@ video {
                 opacity: 0;
                 display: flex;
                 text-align: center;
-                color: white;
+                color: #e9530d;
                 font-weight: bold;
                 text-decoration: none;
                 width: 8.6em;
                 height: 10.5em;
+                text-shadow: 1px 1px 2px black;
 
                 position: absolute;
                 align-items: flex-end;
@@ -1125,6 +1139,7 @@ video {
 
     .help-container {
         .help-text {
+            // padding-top: 12%;
             text-align: center;
        
         }
@@ -1212,6 +1227,7 @@ video {
         .instruments-main-content {
             .instruments-content {
                 flex-direction: row !important;
+                margin-bottom: 0 !important;
                 .instruments-img {
                     display: flex;
                     align-items: center; justify-content: center;
