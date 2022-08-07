@@ -531,6 +531,10 @@ video {
             margin: 0;
         }
     }
+
+    // .sub-job-listing_container.done {
+    //     opacity: .5;
+    // }
 }
 
 .help-container {
@@ -874,6 +878,29 @@ video {
     }
 }
 
+.reagants-container {
+    height: 80vh;
+    width: 82%;
+    // padding-block: 10vh;
+    display: flex;
+    flex-direction: column;
+    // align-items: center; justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 10vh;
+    justify-content: center;
+    align-content: center;
+    margin-inline: 5vh;
+    .reagants-content {
+        // flex: 1 1 0;
+        width: 35%;
+        img {
+            // background-size:cover;
+            height: auto;
+            width: 8.0rem;
+        }
+    }
+}
+
 .instruments-content-container {
     display: flex;
     justify-content: center; align-items: center;
@@ -900,8 +927,23 @@ video {
         background-color: #333;color: white;
         margin-top: 10px;
         font-size: small;
-        
     }
+    .dot-container.reagants {
+        flex-wrap: wrap;
+        .dot {
+            padding: 0;
+            background-color: unset;
+            opacity: .7;
+            flex: 0 1 20%;
+            img {
+                width: 100px; height: auto;
+            }
+        }
+        .dot.active {
+            opacity: 1;
+        }
+    }
+
     .instruments-main-containers {
         display: flex; flex-direction: column;
         justify-content: center; align-items: center;
@@ -997,6 +1039,9 @@ video {
                             color: red;
                         }
                     }
+                    .subTitle {
+                        font-weight: bold !important;
+                    }
                     #hiddenContent {
                         display: none;
                     }
@@ -1008,17 +1053,14 @@ video {
                         list-style: circle;
                         margin-inline-start: 20px;
                     }
-                    // input#readMore:checked ~ p > #hiddenContent {
-                    //     display: block;
-                    //     overflow: scroll;
-                    // }
-                    // input#readMore:checked ~ p > label{
-                    //     display: none;
-                    // }
-                    // input#readLess:checked ~ p > #hiddenContent {
-                    //     display: none;
-                    // }
                 }
+                .instruments-desc.reagants {
+                    height: 83%;
+                    p {
+                        font-weight:normal;
+                    }
+                }
+
             }
     
             #seri-product,.download-brochure {
@@ -1275,6 +1317,30 @@ video {
                 }
           }
         }
+        .instruments-main-content.reagants {
+            width: 179%;
+        }
+    }
+
+    .dot-container.reagants {
+        .dot {
+            flex: 0 1 10% !important;
+        }
+    }
+
+    .reagants-container {
+        justify-content:flex-start;
+        align-items: center;
+        align-content: unset;
+        gap: 5px;
+        .reagants-content {
+            width: 29%;
+            overflow: hidden;
+            img {
+                height: auto;
+                width: 10rem;
+            }
+        }
     }
     
 }
@@ -1362,6 +1428,18 @@ video {
             p,li {
                 line-height: 1.4em;
                 font-size: 1em;
+            }
+        }
+    }
+
+    .reagants-container {
+        align-items: center;
+        .reagants-content {
+            width: 22%;
+            overflow: hidden;
+            img {
+                height: auto;
+                width: 14rem;
             }
         }
     }

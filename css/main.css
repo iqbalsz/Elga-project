@@ -1114,6 +1114,36 @@ video {
           justify-content: flex-start;
 }
 
+.reagants-container {
+  height: 80vh;
+  width: 82%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-block: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-inline: 5vh;
+}
+
+.reagants-container .reagants-content {
+  width: 35%;
+}
+
+.reagants-container .reagants-content img {
+  height: auto;
+  width: 8.0rem;
+}
+
 .instruments-content-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1164,6 +1194,29 @@ video {
   color: white;
   margin-top: 10px;
   font-size: small;
+}
+
+.instruments-content-container .dot-container.reagants {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.instruments-content-container .dot-container.reagants .dot {
+  padding: 0;
+  background-color: unset;
+  opacity: .7;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+}
+
+.instruments-content-container .dot-container.reagants .dot img {
+  width: 100px;
+  height: auto;
+}
+
+.instruments-content-container .dot-container.reagants .dot.active {
+  opacity: 1;
 }
 
 .instruments-content-container .instruments-main-containers {
@@ -1312,6 +1365,10 @@ video {
   color: red;
 }
 
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc .subTitle {
+  font-weight: bold !important;
+}
+
 .instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc #hiddenContent {
   display: none;
 }
@@ -1325,6 +1382,14 @@ video {
   list-style: circle;
   -webkit-margin-start: 20px;
           margin-inline-start: 20px;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc.reagants {
+  height: 83%;
+}
+
+.instruments-content-container .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc.reagants p {
+  font-weight: normal;
 }
 
 .instruments-content-container .instruments-main-containers .instruments-main-content #seri-product, .instruments-content-container .instruments-main-containers .instruments-main-content .download-brochure {
@@ -1601,6 +1666,33 @@ video {
   .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc label {
     display: unset;
   }
+  .instruments-main-containers .instruments-main-content.reagants {
+    width: 179%;
+  }
+  .dot-container.reagants .dot {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 1 10% !important;
+            flex: 0 1 10% !important;
+  }
+  .reagants-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: unset;
+        align-content: unset;
+    gap: 5px;
+  }
+  .reagants-container .reagants-content {
+    width: 29%;
+    overflow: hidden;
+  }
+  .reagants-container .reagants-content img {
+    height: auto;
+    width: 10rem;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -1663,6 +1755,19 @@ video {
   .about-elgatama .elgatama-text p, .about-elgatama .elgatama-text li {
     line-height: 1.4em;
     font-size: 1em;
+  }
+  .reagants-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reagants-container .reagants-content {
+    width: 22%;
+    overflow: hidden;
+  }
+  .reagants-container .reagants-content img {
+    height: auto;
+    width: 14rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
