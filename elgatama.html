@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/image/logo.png">
+    <script src="splide-4.0.7/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="splide-4.0.7/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 <body>
@@ -47,22 +49,65 @@
     </header>
 
     <!-- content here -->
-    <div class="banner-container">
+    <!-- <div class="banner-container">
         <div class="about-banner">
             <img classs="first" src="image/aboutUs-1.JPG" alt="">
             <img src="image/aboutUs-2.JPG" alt="">
             <img src="image/aboutUs-3.JPG" alt="">
             <img src="image/aboutUs-4.JPG" alt="">
-            <!-- <img src="image/aboutUs-5.JPG" alt=""> -->
         </div>
         <div class="elgatama-pict">
             <img src="image/logo.png" alt="">
         </div>
-    </div>
+    </div> -->
+    <section id="carousel1" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="image/Elgatama Photos/1.jpg" alt="">
+                  </li>
+      
+                  <li class="splide__slide">
+                      <img src="image/Elgatama Photos/2.jpg" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/3.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/4.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </section>
+    <section id="carousel2" class="splide" aria-label="Beautiful Images">
+        <div class="elgatama-pict">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/5.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/6.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/7.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/8.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </section>
+
+    
+
 
     <div class="about-elgatama">
-        
-
         <div class="elgatama-text">
             <h1>PT. Elga Tama</h1>
             <p>PT. Elga Tama adalah perusahaan perdagangan alat kesehatan dengan IDAK No. 9120100850429 yang berlokasi di Jl. Kyai Caringin 18A-20 di Cideng, Jakarta Pusat. Perusahaan ini didirikan pada tanggal 16 September 2005 oleh bapak M. Rochimi selaku pendiri dan pemilik saham terbesar dari jaringan perusahaan alkes Multisera Group.<br>
@@ -126,6 +171,37 @@
             document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
         }
     }
+
+    document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#carousel1', {
+            type   : 'loop',
+            snap: false,
+            drag: 'free',
+            perPage    : 3,
+            autoWidth: 'true',
+            pagination: false,
+            arrows: false,
+            breakpoints: {
+                640: {
+                    perPage: 3,
+                },
+            },
+    } ).mount();
+    new Splide( '#carousel2', {
+            type   : 'loop',
+            snap: false,
+            drag: 'free',
+            perPage    : 3,
+            autoWidth: 'true',
+            pagination: false,
+            arrows: false,
+            breakpoints: {
+                640: {
+                    perPage: 3,
+                },
+            },
+    } ).mount();
+    } );
     
 </script>
     

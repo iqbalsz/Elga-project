@@ -222,6 +222,16 @@ header label {
   margin: auto;
 }
 
+.bot-nav .bot-wrapper.multisera a img {
+  width: auto;
+  padding: 10px 1em;
+  height: 26px;
+}
+
+.bot-nav .bot-wrapper.multisera a img:hover {
+  opacity: .5;
+}
+
 .bot-nav .pull-nav {
   color: white;
   text-align: center;
@@ -301,9 +311,35 @@ header label {
   margin: 0;
 }
 
+.elgatama-pict {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+}
+
+.elgatama-pict img {
+  width: auto;
+  height: 100%;
+  padding: 5px;
+  background: white;
+  border-radius: 100px;
+}
+
+#carousel1 {
+  margin-top: 9vh;
+}
+
 .splide__slide img {
   width: auto;
-  height: 400px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -580,7 +616,7 @@ video {
 .job-listing_container .sub-job-listing_container ul li a {
   text-decoration: none;
   padding: 2px;
-  background: var(--accent-color);
+  background: #e9530d;
   color: white;
   border-radius: 5px;
   overflow: auto;
@@ -592,7 +628,7 @@ video {
 
 .job-listing_container .sub-job-listing_container .job-listing-department {
   font-size: small;
-  color: var(--accent-color);
+  color: #e9530d;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,7 +662,7 @@ video {
 }
 
 .job-listing_container .sub-job-listing_container.new {
-  border-left: solid var(--accent-color);
+  border-left: solid #e9530d;
 }
 
 .job-listing_container .sub-job-listing_container.new .new-job {
@@ -909,6 +945,7 @@ video {
   bottom: 73vh;
   color: white;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+  width: 75%;
 }
 
 .event-container .event-slideshow-container .desc-event #event-title {
@@ -1589,6 +1626,7 @@ video {
     margin: unset;
   }
   .event-container .event-slideshow-container .desc-event {
+    width: 25%;
     color: white;
     bottom: 20vh;
     left: 5%;
@@ -1644,6 +1682,7 @@ video {
     height: 180% !important;
     position: unset !important;
     max-width: 366px;
+    max-height: 293px;
   }
   .instruments-main-containers .instruments-main-content .instruments-content .instruments-desc {
     max-width: 50%;

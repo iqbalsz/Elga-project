@@ -13,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/image/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="splide-4.0.7/dist/js/splide.min.js"></script>
+    <!-- <script src="splide-4.0.7/dist/js/splide-core.min.css"></script> -->
     <link rel="stylesheet" href="splide-4.0.7/dist/css/splide.min.css">
 </head>
 <body>
@@ -47,29 +48,42 @@
 
     </header>
 
-    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+    <section id="carousel1" class="splide" aria-label="Beautiful Images">
         <div class="splide__track">
               <ul class="splide__list">
                   <li class="splide__slide">
-                      <img src="image/aboutUs-1.JPG" alt="">
-                      <div>
-                          Description 01
-                      </div>
+                      <img src="image/Elgatama Photos/1.jpg" alt="">
                   </li>
       
                   <li class="splide__slide">
-                      <img src="image/aboutUs-4.JPG" alt="">
-                      <div>
-                          Description 02
-                      </div>
+                      <img src="image/Elgatama Photos/2.jpg" alt="">
                   </li>
 
                   <li class="splide__slide">
-                    <img src="image/aboutUs-3.JPG" alt="">
-                    <div>
-                        Description 02
-                    </div>
-                </li>
+                    <img src="image/Elgatama Photos/3.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/4.jpg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </section>
+    <section id="carousel2" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/5.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/6.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/7.jpg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Elgatama Photos/8.jpg" alt="">
+                  </li>
               </ul>
         </div>
       </div>
@@ -617,10 +631,24 @@
     // } ).mount();
     // } );
     document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#image-carousel', {
+    new Splide( '#carousel1', {
             type   : 'loop',
-            perPage    : 1,
-            focus  : 'center',
+            perPage    : 3,
+            autoWidth: 'true',
+            pagination: false,
+            arrows: false,
+            breakpoints: {
+                640: {
+                    perPage: 1,
+                },
+            },
+    } ).mount();
+    new Splide( '#carousel2', {
+            type   : 'loop',
+            perPage    : 3,
+            autoWidth: 'true',
+            pagination: false,
+            arrows: false,
             breakpoints: {
                 640: {
                     perPage: 1,
@@ -628,6 +656,9 @@
             },
     } ).mount();
     } );
+
+    
+    // } );
     
 </script>
     

@@ -13,6 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/image/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="splide-4.0.7/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="splide-4.0.7/dist/css/splide.min.css">
 </head>
 <body>
 
@@ -47,15 +49,62 @@
     </header>
 
     <!-- content here -->
-    <div class="banner-container">
+    <!-- <div class="banner-container">
         <div class="about-banner">
             <img classs="first" src="image/aboutUs-1.JPG" alt="">
             <img src="image/Multisera Logo.png" alt="">
             <img src="image/aboutUs-3.JPG" alt="">
             <img src="image/aboutUs-4.JPG" alt="">
-            <!-- <img src="image/aboutUs-5.JPG" alt=""> -->
         </div>
-    </div>
+    </div> -->
+
+    <section id="carousel1" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="image/Mutlisera Photos/1.jpeg" alt="">
+                  </li>
+      
+                  <li class="splide__slide">
+                      <img src="image/Mutlisera Photos/2.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/3.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/4.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="image/Mutlisera Photos/5.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="image/Mutlisera Photos/6.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/7.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/8.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="image/Mutlisera Photos/9.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/10.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/11.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/12.jpeg" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="image/Mutlisera Photos/13.jpeg" alt="">
+                  </li>
+              </ul>
+        </div>
+      </div>
+    </section>
 
     <div class="about-elgatama">
         <div class="multisera-map">
@@ -78,24 +127,9 @@
 
     <!-- bot-nav-start -->
     <nav class="bot-nav">
-        <div class="bot-wrapper">
-            <a href="https://id-id.facebook.com/elgatamajkt" target="_blank" class="bot-nav__link">
-                <i class="fa fa-facebook-square"></i>
-            </a>
-            <a href="https://line.me/ti/p/58hvcKHKVg" class="bot-nav__link" target="_blank">
-                <i class="fa fa-line"></i>
-            </a>
-            <a href="https://tiktok.com/@elgatama_biosystems" class="bot-nav__link" target="_blank">
-                <i class="fa fa-tiktok"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/81530288" target="_blank" class="bot-nav__link">
-                <i class="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCGJ6ZmrlSm2fWi8SkbxvQnA" target="_blank" class="bot-nav__link">
-                <i class="fa fa-youtube-square"></i>
-            </a>
-            <a href="https://www.instagram.com/biosystems_elgatama/" target="_blank" class="bot-nav__link">
-                <i class="fa fa-instagram"></i>
+        <div class="bot-wrapper multisera">
+            <a href="https://multisera.com/" target="_blank" class="bot-nav__link">
+                <img src="image/multisera-small.png" alt="">
             </a>
         </div>
     </nav>
@@ -111,6 +145,23 @@
             document.getElementsByClassName("nav-container")[0].style.borderRadius = "0 0 25px 25px";
         }
     }
+
+    document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#carousel1', {
+            type   : 'loop',
+            snap: false,
+            drag: 'free',
+            perPage    : 3,
+            autoWidth: 'true',
+            pagination: false,
+            arrows: false,
+            breakpoints: {
+                640: {
+                    perPage: 3,
+                },
+            },
+    } ).mount();
+    } );
     
 </script>
     
