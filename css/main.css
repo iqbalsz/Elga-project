@@ -1127,11 +1127,6 @@ video {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-block: 10vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   margin-inline: 5vh;
 }
 
