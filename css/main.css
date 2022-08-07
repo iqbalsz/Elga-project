@@ -1495,6 +1495,10 @@ video {
   opacity: .5;
 }
 
+.instruments-content-container.reagants {
+  margin-bottom: 15vh;
+}
+
 @media only screen and (min-width: 680px) {
   .button-nav {
     position: fixed;
@@ -1740,6 +1744,9 @@ video {
   .reagants-container .reagants-content img {
     height: auto;
     width: 10rem;
+  }
+  .instruments-content-container.reagants {
+    margin-bottom: 0;
   }
 }
 

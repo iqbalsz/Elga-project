@@ -1166,6 +1166,10 @@ video {
     
 }
 
+.instruments-content-container.reagants {
+    margin-bottom: 15vh;
+}
+
 @media only screen and (min-width: 680px) {
     .button-nav {
         position: fixed;
@@ -1388,6 +1392,10 @@ video {
                 width: 10rem;
             }
         }
+    }
+
+    .instruments-content-container.reagants {
+        margin-bottom: 0;
     }
     
 }
