@@ -50,7 +50,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1000;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 15px 15px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
@@ -221,7 +221,7 @@ header label {
           flex-direction: column;
   overflow-x: auto;
   margin: 0 0 0 0;
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
   z-index: 1001;
 }
 
@@ -325,10 +325,9 @@ header label {
 }
 
 .elgatama-pict {
-  position: absolute;
-  top: 90%;
+  margin-top: 40px;
   width: 100%;
-  height: 20%;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1100,18 +1099,28 @@ video {
   font-style: italic;
   -webkit-transition: .2s;
   transition: .2s;
+  z-index: 2;
 }
 
 .product-index-text .product-mid h1 {
-  font-family: sans-serif;
-  font-weight: bold;
+  font-family: Arial;
+  font-weight: bolder;
   margin-block: 10px;
   letter-spacing: 2px;
+}
+
+.product-index-text .product-mid .mid {
+  font-family: 'Arial black';
+  font-weight: bolder;
+  margin-block: 10px;
+  letter-spacing: 2px;
+  font-size: 39px;
 }
 
 .product-index-text .product-mid p {
   font-size: x-small;
   margin: 0;
+  font-size: 12px;
 }
 
 .product-index-container {
@@ -1496,7 +1505,10 @@ video {
 }
 
 .instruments-content-container.reagants {
-  margin-bottom: 16vh;
+  margin-bottom: 29vh;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
 }
 
 @media only screen and (min-width: 680px) {
@@ -1562,6 +1574,8 @@ video {
   }
   .button-nav .menu__item:hover:before {
     opacity: 1;
+    margin-bottom: 50px;
+    font-size: 25px;
   }
   .button-nav .menu__item img {
     height: 8.6em;
@@ -1672,6 +1686,9 @@ video {
   .product-index-container .instrument-bg img, .product-index-container .reagents-bg img {
     height: var(--product-height);
   }
+  .instruments-main-containers.reagants {
+    height: 70% !important;
+  }
   .instruments-main-containers {
     height: 50% !important;
     width: 60% !important;
@@ -1747,6 +1764,7 @@ video {
   }
   .instruments-content-container.reagants {
     margin-bottom: 0;
+    height: 77vh;
   }
 }
 
@@ -1823,6 +1841,13 @@ video {
   .reagants-container .reagants-content img {
     height: auto;
     width: 14rem;
+  }
+  .product-index-container .instrument-bg, .product-index-container .reagents-bg {
+    z-index: 1;
+    --product-height: 400px;
+  }
+  .product-index-container .instrument-bg img, .product-index-container .reagents-bg img {
+    height: var(--product-height);
   }
 }
 /*# sourceMappingURL=main.css.map */
