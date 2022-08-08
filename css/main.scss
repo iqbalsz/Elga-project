@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif, "Arial black";
     min-height: 100vh;
     // background-color: white;
     background-size: cover;
@@ -849,7 +849,7 @@ video {
 .product-index-text {
     position: absolute;
     display: flex;
-    height: 100vh;
+    height: 76vh;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -1183,6 +1183,9 @@ video {
 }
 
 @media only screen and (min-width: 680px) {
+    .product-index-text {
+        height: 100vh !important;
+    }
     .button-nav {
         position: fixed;
         // top: 0%;
